@@ -1,0 +1,14 @@
+/** @define Button */
+.Button {
+  border-radius: 2px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.35rem 1.5rem;
+  text-transform: uppercase;
+}
+
+.Button--transparent {
+  background-color: transparent;
+  border: transparent;
+}

@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+@import "./css/typo.css";
+
+/* components */
+@import "./css/container.css";
+@import "suitcss-components-grid";
+@import "./css/media.css";
+@import "suitcss-components-button";
+@import "./css/button.css";
+@import "./css/figure.css";
+
+/* block */
+@import "./css/mainheader.css";
+@import "./css/hero.css";
+@import "./css/timeline.css"
+@import "./css/mainfooter.css";
+
+/* Utilities */
+@import "suitcss-utils-flex";
+@import "suitcss-utils-size";
+@import "suitcss-utils-text";
+
+@import "gravitons";
+
+/* Variable */
+
+:root {
+  --color-primary: #40cad6;
+}
+
+@custom-media --sm-viewport  (max-width:640px);
+@custom-media --md-viewport (min-width:640px);
+@custom-media --lg-viewport (min-width:960px);
+@custom-media --xl-viewport (min-width:1280px);
+
+
+html {
+  background-color: #fcfcfc;
+  font-family: "roboto";
+  font-size: 100%;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@media (--lg-viewport) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.hack-Grid-flipL .Grid:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+
+hr {
+  border: 1px solid #eee;
+}
+
+.icon-medium {
+  max-width: 64px;
+}
+
+.Section-header {
+  margin-bottom: 3rem;
+}
+
+@media (--md-viewport) {
+  .u-md-col2 {
+    column-count: 2;
+  }
+}
+
+.bordered {
+  border: 1px solid;
+}
+
+.thumb--medium {
+  max-width: 256px;
+  width: 100%;
+}
+
+.bg-white2 {
+  background-color: #f3f3f3;
+}

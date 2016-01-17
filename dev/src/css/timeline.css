@@ -1,0 +1,78 @@
+.Timeline {
+  position: relative;
+}
+
+.Timeline-item {
+  display: flex;
+}
+
+.Timeline-img {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.Timeline-content {
+  flex: 4;
+}
+
+@media (--md-viewport) {
+  .Timeline::before {
+    background-color: var(--color-primary);
+    content: "";
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 2px;
+  }
+
+  .Timeline-item {
+    align-items: center;
+    display: flex;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  .Timeline-item::before {
+    background-color: var(--color-primary);
+    border-radius: 500px;
+    content: "";
+    height: 24px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+  }
+
+  .Timeline-item > * {
+    flex: 1 1 0;
+  }
+
+  .Timeline-item:nth-child(2n+1) {
+    flex-direction: row-reverse;
+  }
+
+  .Timeline-item:nth-child(2n+2) {
+    flex-direction: row;
+  }
+
+  .Timeline:nth-child(2n+1) .Timeline-content {
+    margin-right: 3rem;
+    text-align: right;
+  }
+  .Timeline:nth-child(2n+1) .Timeline-img {
+    margin-left: 3rem;
+    text-align: left;
+  }
+
+  .Timeline-item:nth-child(2n+2) .Timeline-content {
+    margin-left: 3rem;
+    text-align: left;
+  }
+  .Timeline-item:nth-child(2n+2) .Timeline-img {
+    margin-right: 3rem;
+    text-align: right;
+  }
+}

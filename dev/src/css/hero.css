@@ -1,0 +1,28 @@
+
+.Hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.Hero-content {
+  width: 100%;
+}
+
+.Hero-title {
+  font-size: responsive 2.125rem 3.25rem;
+  font-weight: 200;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+/* modifer */
+
+.Hero--hight-oneTree {
+  min-height: 66.66vh;
+}

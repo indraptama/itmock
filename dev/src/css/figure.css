@@ -1,0 +1,40 @@
+.Figure--slideDown {
+  backface-visibility: hidden;
+  position: relative;
+  transform: scale3d(1, 1, 1);
+  transition: transform 250ms ease;
+  z-index: 1;
+}
+
+.Figure--slideDown img {
+  position: relative;
+}
+
+.Figure--slideDown figcaption {
+  backface-visibility: hidden;
+  background-color: #fff;
+  bottom: 0;
+  padding: 1rem;
+  position: absolute;
+  text-transform: capitalize;
+  transform: translate3d(0,0,0);
+  transition: transform 250ms ease;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (--lg-viewport) {
+  .Figure--slideDown:hover {
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+    transform: scale3d(1.1, 1.1 ,1.1);
+    transition: transform 250ms ease;
+    z-index: 2;
+  }
+
+  .Figure--slideDown:hover figcaption {
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+    transform: translate3d(0,50px,0);
+    transition: transform 250ms ease;
+    transition-delay: 100ms;
+  }
+}

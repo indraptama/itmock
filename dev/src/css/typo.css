@@ -1,0 +1,32 @@
+body {
+  color: #444;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+
+.Section-title {
+  font-size: responsive 1.25rem 2rem;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+h3,
+.gamma,
+.headline {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}

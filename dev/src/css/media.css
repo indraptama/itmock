@@ -1,0 +1,66 @@
+/** @define Media */
+
+.Media {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.Media {
+  display: flex;
+}
+
+/* Media Modifer */
+
+.Media-center {
+  align-items: center;
+}
+
+.Media-bottom {
+  align-items: flex-end;
+}
+
+/* Media Item */
+
+.Media-img,
+.Media-body {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.Media-body {
+  flex: 1 1 auto;
+}
+
+.Media--onSmall,
+.Media--onMedium,
+.Media--onLarge,
+.Media--onXLarge {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+/* Media based on Viewport */
+
+@media (--sm-viewport) {
+  .Media--onSmall {
+    display: flex;
+  }
+}
+
+@media (--md-viewport) {
+  .Media--onMedium {
+    display: flex;
+  }
+}
+
+@media (--lg-viewport) {
+  .Media--onLarge {
+    display: flex;
+  }
+}
+
+@media (--xl-viewport) {
+  .Media--onXLarge {
+    display: flex;
+  }
+}
