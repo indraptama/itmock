@@ -16,6 +16,9 @@
 }
 
 @media (--md-viewport) {
+  .Timeline {
+    position: relative;
+  }
   .Timeline::before {
     background-color: var(--color-primary);
     content: "";

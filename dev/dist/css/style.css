@@ -2205,6 +2205,13 @@ hr {
 
 
 
+  .Timeline {
+    position: relative;
+  }
+
+
+
+
   .Timeline::before {
     background-color: #40cad6;
     content: "";
@@ -3932,6 +3939,13 @@ hr {
 
 
   @media (min-width:640px) {
+
+
+
+
+    .Timeline {
+      position: relative;
+    }
 
 
 
