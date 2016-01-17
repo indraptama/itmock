@@ -2,9 +2,6 @@
   box-sizing: border-box;
 }
 
-
-
-
 @import "./css/typo.css";
 
 /* components */
@@ -18,8 +15,8 @@
 /* block */
 @import "./css/mainheader.css";
 @import "./css/hero.css";
-@import "./css/timeline.css"
-@import "./css/mainfooter.css";
+@import "./css/timeline.css";
+
 
 /* Utilities */
 @import "suitcss-utils-flex";
@@ -29,7 +26,6 @@
 @import "gravitons";
 
 /* Variable */
-
 :root {
   --color-primary: #40cad6;
 }
@@ -38,6 +34,7 @@
 @custom-media --md-viewport (min-width:640px);
 @custom-media --lg-viewport (min-width:960px);
 @custom-media --xl-viewport (min-width:1280px);
+
 
 
 html {

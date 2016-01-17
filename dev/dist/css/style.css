@@ -2,9 +2,6 @@
   box-sizing: border-box;
 }
 
-
-
-
 body {
   color: #444;
   font-size: 0.875rem;
@@ -597,6 +594,32 @@ h3,
 .Hero--hight-oneTree {
   min-height: 66.66vh;
 }
+.Timeline {
+  position: relative;
+}
+
+.Timeline-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Timeline-img {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 1rem;
+}
+
+.Timeline-content {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
 
 /* Utilities */
 /** @define utilities */
@@ -1342,6 +1365,7 @@ h3,
 /* Variable */
 
 
+
 html {
   background-color: #fcfcfc;
   font-family: "roboto";
@@ -1390,15 +1414,9 @@ hr {
 
 @media screen and (min-width: 1280px) {
 
-
-
-
   .Section-title {
     font-size: 2rem;
   }
-
-
-
 
   .Hero-title {
     font-size: 3.25rem;
@@ -1407,15 +1425,9 @@ hr {
 
 @media screen and (max-width: 420px) {
 
-
-
-
   .Section-title {
     font-size: 1.25rem;
   }
-
-
-
 
   .Hero-title {
     font-size: 2.125rem;
@@ -1424,18 +1436,12 @@ hr {
 
 @media  (max-width:640px) {
 
-
-
-
   .Media--onSmall {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
-
-
-
 
   .MainHeader-nav {
     display: none;
@@ -1448,18 +1454,12 @@ hr {
    * Container
    */
 
-
-
-
   .u-sm-flex {
     display: -webkit-box !important;
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
     display: flex !important;
   }
-
-
-
 
   .u-sm-flexInline {
     display: -webkit-inline-box !important;
@@ -1472,9 +1472,6 @@ hr {
    * Direction: row
    */
 
-
-
-
   .u-sm-flexRow {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -1482,9 +1479,6 @@ hr {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
   }
-
-
-
 
   .u-sm-flexRowReverse {
     -webkit-box-orient: horizontal !important;
@@ -1498,9 +1492,6 @@ hr {
    * Direction: column
    */
 
-
-
-
   .u-sm-flexCol {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -1508,9 +1499,6 @@ hr {
     -ms-flex-direction: column !important;
     flex-direction: column !important;
   }
-
-
-
 
   .u-sm-flexColReverse {
     -webkit-box-orient: vertical !important;
@@ -1524,26 +1512,17 @@ hr {
    * Wrap
    */
 
-
-
-
   .u-sm-flexWrap {
     -webkit-flex-wrap: wrap !important;
     -ms-flex-wrap: wrap !important;
     flex-wrap: wrap !important;
   }
 
-
-
-
   .u-sm-flexNoWrap {
     -webkit-flex-wrap: nowrap !important;
     -ms-flex-wrap: nowrap !important;
     flex-wrap: nowrap !important;
   }
-
-
-
 
   .u-sm-flexWrapReverse {
     -webkit-flex-wrap: wrap-reverse !important;
@@ -1555,18 +1534,12 @@ hr {
    * Align items along the main axis of the current line of the flex container
    */
 
-
-
-
   .u-sm-flexJustifyStart {
     -webkit-box-pack: start !important;
     -webkit-justify-content: flex-start !important;
     -ms-flex-pack: start !important;
     justify-content: flex-start !important;
   }
-
-
-
 
   .u-sm-flexJustifyEnd {
     -webkit-box-pack: end !important;
@@ -1575,9 +1548,6 @@ hr {
     justify-content: flex-end !important;
   }
 
-
-
-
   .u-sm-flexJustifyCenter {
     -webkit-box-pack: center !important;
     -webkit-justify-content: center !important;
@@ -1585,18 +1555,12 @@ hr {
     justify-content: center !important;
   }
 
-
-
-
   .u-sm-flexJustifyBetween {
     -webkit-box-pack: justify !important;
     -webkit-justify-content: space-between !important;
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
   }
-
-
-
 
   .u-sm-flexJustifyAround {
     -webkit-justify-content: space-around !important;
@@ -1609,9 +1573,6 @@ hr {
    * Similar to `justify-content` but in the perpendicular direction
    */
 
-
-
-
   .u-sm-flexAlignItemsStart {
     -webkit-box-align: start !important;
     -webkit-align-items: flex-start !important;
@@ -1619,9 +1580,6 @@ hr {
     -ms-grid-row-align: flex-start !important;
     align-items: flex-start !important;
   }
-
-
-
 
   .u-sm-flexAlignItemsEnd {
     -webkit-box-align: end !important;
@@ -1631,9 +1589,6 @@ hr {
     align-items: flex-end !important;
   }
 
-
-
-
   .u-sm-flexAlignItemsCenter {
     -webkit-box-align: center !important;
     -webkit-align-items: center !important;
@@ -1642,9 +1597,6 @@ hr {
     align-items: center !important;
   }
 
-
-
-
   .u-sm-flexAlignItemsStretch {
     -webkit-box-align: stretch !important;
     -webkit-align-items: stretch !important;
@@ -1652,9 +1604,6 @@ hr {
     -ms-grid-row-align: stretch !important;
     align-items: stretch !important;
   }
-
-
-
 
   .u-sm-flexAlignItemsBaseline {
     -webkit-box-align: baseline !important;
@@ -1670,17 +1619,11 @@ hr {
    * Has no effect when there is only one line of flex items.
    */
 
-
-
-
   .u-sm-flexAlignContentStart {
     -webkit-align-content: flex-start !important;
     -ms-flex-line-pack: start !important;
     align-content: flex-start !important;
   }
-
-
-
 
   .u-sm-flexAlignContentEnd {
     -webkit-align-content: flex-end !important;
@@ -1688,17 +1631,11 @@ hr {
     align-content: flex-end !important;
   }
 
-
-
-
   .u-sm-flexAlignContentCenter {
     -webkit-align-content: center !important;
     -ms-flex-line-pack: center !important;
     align-content: center !important;
   }
-
-
-
 
   .u-sm-flexAlignContentStretch {
     -webkit-align-content: stretch !important;
@@ -1706,17 +1643,11 @@ hr {
     align-content: stretch !important;
   }
 
-
-
-
   .u-sm-flexAlignContentBetween {
     -webkit-align-content: space-between !important;
     -ms-flex-line-pack: justify !important;
     align-content: space-between !important;
   }
-
-
-
 
   .u-sm-flexAlignContentAround {
     -webkit-align-content: space-around !important;
@@ -1729,9 +1660,6 @@ hr {
    */
 
   /* postcss-bem-linter: ignore */
-
-
-
 
   .u-sm-flex > *,
   .u-sm-flexInline > * {
@@ -1749,17 +1677,11 @@ hr {
    * Override default alignment of single item when specified by `align-items`
    */
 
-
-
-
   .u-sm-flexAlignSelfStart {
     -webkit-align-self: flex-start !important;
     -ms-flex-item-align: start !important;
     align-self: flex-start !important;
   }
-
-
-
 
   .u-sm-flexAlignSelfEnd {
     -webkit-align-self: flex-end !important;
@@ -1767,17 +1689,11 @@ hr {
     align-self: flex-end !important;
   }
 
-
-
-
   .u-sm-flexAlignSelfCenter {
     -webkit-align-self: center !important;
     -ms-flex-item-align: center !important;
     align-self: center !important;
   }
-
-
-
 
   .u-sm-flexAlignSelfStretch {
     -webkit-align-self: stretch !important;
@@ -1785,17 +1701,11 @@ hr {
     align-self: stretch !important;
   }
 
-
-
-
   .u-sm-flexAlignSelfBaseline {
     -webkit-align-self: baseline !important;
     -ms-flex-item-align: baseline !important;
     align-self: baseline !important;
   }
-
-
-
 
   .u-sm-flexAlignSelfAuto {
     -webkit-align-self: auto !important;
@@ -1807,9 +1717,6 @@ hr {
    * Change order without editing underlying HTML
    */
 
-
-
-
   .u-sm-flexOrderFirst {
     -webkit-box-ordinal-group: 0 !important;
     -webkit-order: -1 !important;
@@ -1817,18 +1724,12 @@ hr {
     order: -1 !important;
   }
 
-
-
-
   .u-sm-flexOrderLast {
     -webkit-box-ordinal-group: 2 !important;
     -webkit-order: 1 !important;
     -ms-flex-order: 1 !important;
     order: 1 !important;
   }
-
-
-
 
   .u-sm-flexOrderNone {
     -webkit-box-ordinal-group: 1 !important;
@@ -1847,9 +1748,6 @@ hr {
    *    Use `0%` to avoid bug in IE10/11 with unitless flex basis - http://git.io/vllWx
    */
 
-
-
-
   .u-sm-flexGrow1 {
     -webkit-box-flex: 1 !important;
     -webkit-flex: 1 1 0% !important;
@@ -1859,18 +1757,12 @@ hr {
     /* 1 */
   }
 
-
-
-
   .u-sm-flexGrow2 {
     -webkit-box-flex: 2 !important;
     -webkit-flex: 2 1 0% !important;
     -ms-flex: 2 1 0% !important;
     flex: 2 1 0% !important;
   }
-
-
-
 
   .u-sm-flexGrow3 {
     -webkit-box-flex: 3 !important;
@@ -1879,18 +1771,12 @@ hr {
     flex: 3 1 0% !important;
   }
 
-
-
-
   .u-sm-flexGrow4 {
     -webkit-box-flex: 4 !important;
     -webkit-flex: 4 1 0% !important;
     -ms-flex: 4 1 0% !important;
     flex: 4 1 0% !important;
   }
-
-
-
 
   .u-sm-flexGrow5 {
     -webkit-box-flex: 5 !important;
@@ -1903,15 +1789,9 @@ hr {
    * Aligning with `auto` margins - http://www.w3.org/TR/css-flexbox-1/#auto-margins
    */
 
-
-
-
   .u-sm-flexExpandLeft {
     margin-left: auto !important;
   }
-
-
-
 
   .u-sm-flexExpandRight {
     margin-right: auto !important;
@@ -1931,9 +1811,6 @@ hr {
 
   /* postcss-bem-linter: ignore */
 
-
-
-
   [class*="u-sm-size"] {
     -webkit-flex-basis: auto !important;
     -ms-flex-preferred-size: auto !important;
@@ -1942,45 +1819,27 @@ hr {
     /* 1 */
   }
 
-
-
-
   .u-sm-size1of12 {
     width: 8.33333% !important;
   }
-
-
-
 
   .u-sm-size1of10 {
     width: 10% !important;
   }
 
-
-
-
   .u-sm-size1of8 {
     width: 12.5% !important;
   }
-
-
-
 
   .u-sm-size1of6,
   .u-sm-size2of12 {
     width: 16.66667% !important;
   }
 
-
-
-
   .u-sm-size1of5,
   .u-sm-size2of10 {
     width: 20% !important;
   }
-
-
-
 
   .u-sm-size1of4,
   .u-sm-size2of8,
@@ -1988,15 +1847,9 @@ hr {
     width: 25% !important;
   }
 
-
-
-
   .u-sm-size3of10 {
     width: 30% !important;
   }
-
-
-
 
   .u-sm-size1of3,
   .u-sm-size2of6,
@@ -2004,30 +1857,18 @@ hr {
     width: 33.33333% !important;
   }
 
-
-
-
   .u-sm-size3of8 {
     width: 37.5% !important;
   }
-
-
-
 
   .u-sm-size2of5,
   .u-sm-size4of10 {
     width: 40% !important;
   }
 
-
-
-
   .u-sm-size5of12 {
     width: 41.66667% !important;
   }
-
-
-
 
   .u-sm-size1of2,
   .u-sm-size2of4,
@@ -2038,30 +1879,18 @@ hr {
     width: 50% !important;
   }
 
-
-
-
   .u-sm-size7of12 {
     width: 58.33333% !important;
   }
-
-
-
 
   .u-sm-size3of5,
   .u-sm-size6of10 {
     width: 60% !important;
   }
 
-
-
-
   .u-sm-size5of8 {
     width: 62.5% !important;
   }
-
-
-
 
   .u-sm-size2of3,
   .u-sm-size4of6,
@@ -2069,15 +1898,9 @@ hr {
     width: 66.66667% !important;
   }
 
-
-
-
   .u-sm-size7of10 {
     width: 70% !important;
   }
-
-
-
 
   .u-sm-size3of4,
   .u-sm-size6of8,
@@ -2085,38 +1908,23 @@ hr {
     width: 75% !important;
   }
 
-
-
-
   .u-sm-size4of5,
   .u-sm-size8of10 {
     width: 80% !important;
   }
-
-
-
 
   .u-sm-size5of6,
   .u-sm-size10of12 {
     width: 83.33333% !important;
   }
 
-
-
-
   .u-sm-size7of8 {
     width: 87.5% !important;
   }
 
-
-
-
   .u-sm-size9of10 {
     width: 90% !important;
   }
-
-
-
 
   .u-sm-size11of12 {
     width: 91.66667% !important;
@@ -2131,9 +1939,6 @@ hr {
    * 1. Be explicit to work around IE10 bug with shorthand flex - http://git.io/vllC7
    * 2. IE10 ignores previous `flex-basis` value. Setting again here fixes - http://git.io/vllMt
    */
-
-
-
 
   .u-sm-sizeFill {
     -webkit-box-flex: 1 !important;
@@ -2156,9 +1961,6 @@ hr {
    * http://www.w3.org/TR/css-flexbox/images/rel-vs-abs-flex.svg
    */
 
-
-
-
   .u-sm-sizeFillAlt {
     -webkit-box-flex: 1 !important;
     -webkit-flex: 1 1 auto !important;
@@ -2173,9 +1975,6 @@ hr {
    * Make an element the width of its parent.
    */
 
-
-
-
   .u-sm-sizeFull {
     box-sizing: border-box !important;
     display: block !important;
@@ -2185,9 +1984,6 @@ hr {
 
 @media (min-width:640px) {
 
-
-
-
   .Media--onMedium {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2195,22 +1991,13 @@ hr {
     display: flex;
   }
 
-
-
-
   .MainHeader-nav {
     display: none;
   }
 
-
-
-
   .Timeline {
     position: relative;
   }
-
-
-
 
   .Timeline::before {
     background-color: #40cad6;
@@ -2223,9 +2010,6 @@ hr {
     transform: translateX(-50%);
     width: 2px;
   }
-
-
-
 
   .Timeline-item {
     -webkit-box-align: center;
@@ -2240,9 +2024,6 @@ hr {
     position: relative;
   }
 
-
-
-
   .Timeline-item::before {
     background-color: #40cad6;
     border-radius: 500px;
@@ -2256,18 +2037,12 @@ hr {
     width: 24px;
   }
 
-
-
-
   .Timeline-item > * {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 0;
     -ms-flex: 1 1 0;
     flex: 1 1 0;
   }
-
-
-
 
   .Timeline-item:nth-child(2n+1) {
     -webkit-box-orient: horizontal;
@@ -2277,9 +2052,6 @@ hr {
     flex-direction: row-reverse;
   }
 
-
-
-
   .Timeline-item:nth-child(2n+2) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2288,32 +2060,20 @@ hr {
     flex-direction: row;
   }
 
-
-
-
   .Timeline:nth-child(2n+1) .Timeline-content {
     margin-right: 3rem;
     text-align: right;
   }
-
-
-
 
   .Timeline:nth-child(2n+1) .Timeline-img {
     margin-left: 3rem;
     text-align: left;
   }
 
-
-
-
   .Timeline-item:nth-child(2n+2) .Timeline-content {
     margin-left: 3rem;
     text-align: left;
   }
-
-
-
 
   .Timeline-item:nth-child(2n+2) .Timeline-img {
     margin-right: 3rem;
@@ -2327,18 +2087,12 @@ hr {
    * Container
    */
 
-
-
-
   .u-md-flex {
     display: -webkit-box !important;
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
     display: flex !important;
   }
-
-
-
 
   .u-md-flexInline {
     display: -webkit-inline-box !important;
@@ -2351,9 +2105,6 @@ hr {
    * Direction: row
    */
 
-
-
-
   .u-md-flexRow {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -2361,9 +2112,6 @@ hr {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
   }
-
-
-
 
   .u-md-flexRowReverse {
     -webkit-box-orient: horizontal !important;
@@ -2377,9 +2125,6 @@ hr {
    * Direction: column
    */
 
-
-
-
   .u-md-flexCol {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -2387,9 +2132,6 @@ hr {
     -ms-flex-direction: column !important;
     flex-direction: column !important;
   }
-
-
-
 
   .u-md-flexColReverse {
     -webkit-box-orient: vertical !important;
@@ -2403,26 +2145,17 @@ hr {
    * Wrap
    */
 
-
-
-
   .u-md-flexWrap {
     -webkit-flex-wrap: wrap !important;
     -ms-flex-wrap: wrap !important;
     flex-wrap: wrap !important;
   }
 
-
-
-
   .u-md-flexNoWrap {
     -webkit-flex-wrap: nowrap !important;
     -ms-flex-wrap: nowrap !important;
     flex-wrap: nowrap !important;
   }
-
-
-
 
   .u-md-flexWrapReverse {
     -webkit-flex-wrap: wrap-reverse !important;
@@ -2434,18 +2167,12 @@ hr {
    * Align items along the main axis of the current line of the flex container
    */
 
-
-
-
   .u-md-flexJustifyStart {
     -webkit-box-pack: start !important;
     -webkit-justify-content: flex-start !important;
     -ms-flex-pack: start !important;
     justify-content: flex-start !important;
   }
-
-
-
 
   .u-md-flexJustifyEnd {
     -webkit-box-pack: end !important;
@@ -2454,9 +2181,6 @@ hr {
     justify-content: flex-end !important;
   }
 
-
-
-
   .u-md-flexJustifyCenter {
     -webkit-box-pack: center !important;
     -webkit-justify-content: center !important;
@@ -2464,18 +2188,12 @@ hr {
     justify-content: center !important;
   }
 
-
-
-
   .u-md-flexJustifyBetween {
     -webkit-box-pack: justify !important;
     -webkit-justify-content: space-between !important;
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
   }
-
-
-
 
   .u-md-flexJustifyAround {
     -webkit-justify-content: space-around !important;
@@ -2488,9 +2206,6 @@ hr {
    * Similar to `justify-content` but in the perpendicular direction
    */
 
-
-
-
   .u-md-flexAlignItemsStart {
     -webkit-box-align: start !important;
     -webkit-align-items: flex-start !important;
@@ -2498,9 +2213,6 @@ hr {
     -ms-grid-row-align: flex-start !important;
     align-items: flex-start !important;
   }
-
-
-
 
   .u-md-flexAlignItemsEnd {
     -webkit-box-align: end !important;
@@ -2510,9 +2222,6 @@ hr {
     align-items: flex-end !important;
   }
 
-
-
-
   .u-md-flexAlignItemsCenter {
     -webkit-box-align: center !important;
     -webkit-align-items: center !important;
@@ -2521,9 +2230,6 @@ hr {
     align-items: center !important;
   }
 
-
-
-
   .u-md-flexAlignItemsStretch {
     -webkit-box-align: stretch !important;
     -webkit-align-items: stretch !important;
@@ -2531,9 +2237,6 @@ hr {
     -ms-grid-row-align: stretch !important;
     align-items: stretch !important;
   }
-
-
-
 
   .u-md-flexAlignItemsBaseline {
     -webkit-box-align: baseline !important;
@@ -2549,17 +2252,11 @@ hr {
    * Has no effect when there is only one line of flex items.
    */
 
-
-
-
   .u-md-flexAlignContentStart {
     -webkit-align-content: flex-start !important;
     -ms-flex-line-pack: start !important;
     align-content: flex-start !important;
   }
-
-
-
 
   .u-md-flexAlignContentEnd {
     -webkit-align-content: flex-end !important;
@@ -2567,17 +2264,11 @@ hr {
     align-content: flex-end !important;
   }
 
-
-
-
   .u-md-flexAlignContentCenter {
     -webkit-align-content: center !important;
     -ms-flex-line-pack: center !important;
     align-content: center !important;
   }
-
-
-
 
   .u-md-flexAlignContentStretch {
     -webkit-align-content: stretch !important;
@@ -2585,17 +2276,11 @@ hr {
     align-content: stretch !important;
   }
 
-
-
-
   .u-md-flexAlignContentBetween {
     -webkit-align-content: space-between !important;
     -ms-flex-line-pack: justify !important;
     align-content: space-between !important;
   }
-
-
-
 
   .u-md-flexAlignContentAround {
     -webkit-align-content: space-around !important;
@@ -2608,9 +2293,6 @@ hr {
    */
 
   /* postcss-bem-linter: ignore */
-
-
-
 
   .u-md-flex > *,
   .u-md-flexInline > * {
@@ -2628,17 +2310,11 @@ hr {
    * Override default alignment of single item when specified by `align-items`
    */
 
-
-
-
   .u-md-flexAlignSelfStart {
     -webkit-align-self: flex-start !important;
     -ms-flex-item-align: start !important;
     align-self: flex-start !important;
   }
-
-
-
 
   .u-md-flexAlignSelfEnd {
     -webkit-align-self: flex-end !important;
@@ -2646,17 +2322,11 @@ hr {
     align-self: flex-end !important;
   }
 
-
-
-
   .u-md-flexAlignSelfCenter {
     -webkit-align-self: center !important;
     -ms-flex-item-align: center !important;
     align-self: center !important;
   }
-
-
-
 
   .u-md-flexAlignSelfStretch {
     -webkit-align-self: stretch !important;
@@ -2664,17 +2334,11 @@ hr {
     align-self: stretch !important;
   }
 
-
-
-
   .u-md-flexAlignSelfBaseline {
     -webkit-align-self: baseline !important;
     -ms-flex-item-align: baseline !important;
     align-self: baseline !important;
   }
-
-
-
 
   .u-md-flexAlignSelfAuto {
     -webkit-align-self: auto !important;
@@ -2686,9 +2350,6 @@ hr {
    * Change order without editing underlying HTML
    */
 
-
-
-
   .u-md-flexOrderFirst {
     -webkit-box-ordinal-group: 0 !important;
     -webkit-order: -1 !important;
@@ -2696,18 +2357,12 @@ hr {
     order: -1 !important;
   }
 
-
-
-
   .u-md-flexOrderLast {
     -webkit-box-ordinal-group: 2 !important;
     -webkit-order: 1 !important;
     -ms-flex-order: 1 !important;
     order: 1 !important;
   }
-
-
-
 
   .u-md-flexOrderNone {
     -webkit-box-ordinal-group: 1 !important;
@@ -2726,9 +2381,6 @@ hr {
    *    Use `0%` to avoid bug in IE10/11 with unitless flex basis - http://git.io/vllWx
    */
 
-
-
-
   .u-md-flexGrow1 {
     -webkit-box-flex: 1 !important;
     -webkit-flex: 1 1 0% !important;
@@ -2738,18 +2390,12 @@ hr {
     /* 1 */
   }
 
-
-
-
   .u-md-flexGrow2 {
     -webkit-box-flex: 2 !important;
     -webkit-flex: 2 1 0% !important;
     -ms-flex: 2 1 0% !important;
     flex: 2 1 0% !important;
   }
-
-
-
 
   .u-md-flexGrow3 {
     -webkit-box-flex: 3 !important;
@@ -2758,18 +2404,12 @@ hr {
     flex: 3 1 0% !important;
   }
 
-
-
-
   .u-md-flexGrow4 {
     -webkit-box-flex: 4 !important;
     -webkit-flex: 4 1 0% !important;
     -ms-flex: 4 1 0% !important;
     flex: 4 1 0% !important;
   }
-
-
-
 
   .u-md-flexGrow5 {
     -webkit-box-flex: 5 !important;
@@ -2782,15 +2422,9 @@ hr {
    * Aligning with `auto` margins - http://www.w3.org/TR/css-flexbox-1/#auto-margins
    */
 
-
-
-
   .u-md-flexExpandLeft {
     margin-left: auto !important;
   }
-
-
-
 
   .u-md-flexExpandRight {
     margin-right: auto !important;
@@ -2810,9 +2444,6 @@ hr {
 
   /* postcss-bem-linter: ignore */
 
-
-
-
   [class*="u-md-size"] {
     -webkit-flex-basis: auto !important;
     -ms-flex-preferred-size: auto !important;
@@ -2821,45 +2452,27 @@ hr {
     /* 1 */
   }
 
-
-
-
   .u-md-size1of12 {
     width: 8.33333% !important;
   }
-
-
-
 
   .u-md-size1of10 {
     width: 10% !important;
   }
 
-
-
-
   .u-md-size1of8 {
     width: 12.5% !important;
   }
-
-
-
 
   .u-md-size1of6,
   .u-md-size2of12 {
     width: 16.66667% !important;
   }
 
-
-
-
   .u-md-size1of5,
   .u-md-size2of10 {
     width: 20% !important;
   }
-
-
-
 
   .u-md-size1of4,
   .u-md-size2of8,
@@ -2867,15 +2480,9 @@ hr {
     width: 25% !important;
   }
 
-
-
-
   .u-md-size3of10 {
     width: 30% !important;
   }
-
-
-
 
   .u-md-size1of3,
   .u-md-size2of6,
@@ -2883,30 +2490,18 @@ hr {
     width: 33.33333% !important;
   }
 
-
-
-
   .u-md-size3of8 {
     width: 37.5% !important;
   }
-
-
-
 
   .u-md-size2of5,
   .u-md-size4of10 {
     width: 40% !important;
   }
 
-
-
-
   .u-md-size5of12 {
     width: 41.66667% !important;
   }
-
-
-
 
   .u-md-size1of2,
   .u-md-size2of4,
@@ -2917,30 +2512,18 @@ hr {
     width: 50% !important;
   }
 
-
-
-
   .u-md-size7of12 {
     width: 58.33333% !important;
   }
-
-
-
 
   .u-md-size3of5,
   .u-md-size6of10 {
     width: 60% !important;
   }
 
-
-
-
   .u-md-size5of8 {
     width: 62.5% !important;
   }
-
-
-
 
   .u-md-size2of3,
   .u-md-size4of6,
@@ -2948,15 +2531,9 @@ hr {
     width: 66.66667% !important;
   }
 
-
-
-
   .u-md-size7of10 {
     width: 70% !important;
   }
-
-
-
 
   .u-md-size3of4,
   .u-md-size6of8,
@@ -2964,38 +2541,23 @@ hr {
     width: 75% !important;
   }
 
-
-
-
   .u-md-size4of5,
   .u-md-size8of10 {
     width: 80% !important;
   }
-
-
-
 
   .u-md-size5of6,
   .u-md-size10of12 {
     width: 83.33333% !important;
   }
 
-
-
-
   .u-md-size7of8 {
     width: 87.5% !important;
   }
 
-
-
-
   .u-md-size9of10 {
     width: 90% !important;
   }
-
-
-
 
   .u-md-size11of12 {
     width: 91.66667% !important;
@@ -3010,9 +2572,6 @@ hr {
    * 1. Be explicit to work around IE10 bug with shorthand flex - http://git.io/vllC7
    * 2. IE10 ignores previous `flex-basis` value. Setting again here fixes - http://git.io/vllMt
    */
-
-
-
 
   .u-md-sizeFill {
     -webkit-box-flex: 1 !important;
@@ -3035,9 +2594,6 @@ hr {
    * http://www.w3.org/TR/css-flexbox/images/rel-vs-abs-flex.svg
    */
 
-
-
-
   .u-md-sizeFillAlt {
     -webkit-box-flex: 1 !important;
     -webkit-flex: 1 1 auto !important;
@@ -3052,17 +2608,11 @@ hr {
    * Make an element the width of its parent.
    */
 
-
-
-
   .u-md-sizeFull {
     box-sizing: border-box !important;
     display: block !important;
     width: 100% !important;
   }
-
-
-
 
   .u-md-col2 {
     -webkit-column-count: 2;
@@ -3073,18 +2623,12 @@ hr {
 
 @media (min-width:960px) {
 
-
-
-
   .Media--onLarge {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
-
-
-
 
   .Figure--slideDown:hover, .Figure--slideDown:focus {
     box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
@@ -3096,9 +2640,6 @@ hr {
     transition: transform 250ms ease, -webkit-transform 250ms ease;
     z-index: 2;
   }
-
-
-
 
   .Figure--slideDown:hover figcaption, .Figure--slideDown:focus figcaption {
     box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
@@ -3112,15 +2653,9 @@ hr {
     transition-delay: 100ms;
   }
 
-
-
-
   .js-navToggle {
     display: none;
   }
-
-
-
 
   .MainHeader-nav {
     display: -webkit-box;
@@ -3140,18 +2675,12 @@ hr {
    * Container
    */
 
-
-
-
   .u-lg-flex {
     display: -webkit-box !important;
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
     display: flex !important;
   }
-
-
-
 
   .u-lg-flexInline {
     display: -webkit-inline-box !important;
@@ -3164,9 +2693,6 @@ hr {
    * Direction: row
    */
 
-
-
-
   .u-lg-flexRow {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -3174,9 +2700,6 @@ hr {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
   }
-
-
-
 
   .u-lg-flexRowReverse {
     -webkit-box-orient: horizontal !important;
@@ -3190,9 +2713,6 @@ hr {
    * Direction: column
    */
 
-
-
-
   .u-lg-flexCol {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -3200,9 +2720,6 @@ hr {
     -ms-flex-direction: column !important;
     flex-direction: column !important;
   }
-
-
-
 
   .u-lg-flexColReverse {
     -webkit-box-orient: vertical !important;
@@ -3216,26 +2733,17 @@ hr {
    * Wrap
    */
 
-
-
-
   .u-lg-flexWrap {
     -webkit-flex-wrap: wrap !important;
     -ms-flex-wrap: wrap !important;
     flex-wrap: wrap !important;
   }
 
-
-
-
   .u-lg-flexNoWrap {
     -webkit-flex-wrap: nowrap !important;
     -ms-flex-wrap: nowrap !important;
     flex-wrap: nowrap !important;
   }
-
-
-
 
   .u-lg-flexWrapReverse {
     -webkit-flex-wrap: wrap-reverse !important;
@@ -3247,18 +2755,12 @@ hr {
    * Align items along the main axis of the current line of the flex container
    */
 
-
-
-
   .u-lg-flexJustifyStart {
     -webkit-box-pack: start !important;
     -webkit-justify-content: flex-start !important;
     -ms-flex-pack: start !important;
     justify-content: flex-start !important;
   }
-
-
-
 
   .u-lg-flexJustifyEnd {
     -webkit-box-pack: end !important;
@@ -3267,9 +2769,6 @@ hr {
     justify-content: flex-end !important;
   }
 
-
-
-
   .u-lg-flexJustifyCenter {
     -webkit-box-pack: center !important;
     -webkit-justify-content: center !important;
@@ -3277,18 +2776,12 @@ hr {
     justify-content: center !important;
   }
 
-
-
-
   .u-lg-flexJustifyBetween {
     -webkit-box-pack: justify !important;
     -webkit-justify-content: space-between !important;
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
   }
-
-
-
 
   .u-lg-flexJustifyAround {
     -webkit-justify-content: space-around !important;
@@ -3301,9 +2794,6 @@ hr {
    * Similar to `justify-content` but in the perpendicular direction
    */
 
-
-
-
   .u-lg-flexAlignItemsStart {
     -webkit-box-align: start !important;
     -webkit-align-items: flex-start !important;
@@ -3311,9 +2801,6 @@ hr {
     -ms-grid-row-align: flex-start !important;
     align-items: flex-start !important;
   }
-
-
-
 
   .u-lg-flexAlignItemsEnd {
     -webkit-box-align: end !important;
@@ -3323,9 +2810,6 @@ hr {
     align-items: flex-end !important;
   }
 
-
-
-
   .u-lg-flexAlignItemsCenter {
     -webkit-box-align: center !important;
     -webkit-align-items: center !important;
@@ -3334,9 +2818,6 @@ hr {
     align-items: center !important;
   }
 
-
-
-
   .u-lg-flexAlignItemsStretch {
     -webkit-box-align: stretch !important;
     -webkit-align-items: stretch !important;
@@ -3344,9 +2825,6 @@ hr {
     -ms-grid-row-align: stretch !important;
     align-items: stretch !important;
   }
-
-
-
 
   .u-lg-flexAlignItemsBaseline {
     -webkit-box-align: baseline !important;
@@ -3362,17 +2840,11 @@ hr {
    * Has no effect when there is only one line of flex items.
    */
 
-
-
-
   .u-lg-flexAlignContentStart {
     -webkit-align-content: flex-start !important;
     -ms-flex-line-pack: start !important;
     align-content: flex-start !important;
   }
-
-
-
 
   .u-lg-flexAlignContentEnd {
     -webkit-align-content: flex-end !important;
@@ -3380,17 +2852,11 @@ hr {
     align-content: flex-end !important;
   }
 
-
-
-
   .u-lg-flexAlignContentCenter {
     -webkit-align-content: center !important;
     -ms-flex-line-pack: center !important;
     align-content: center !important;
   }
-
-
-
 
   .u-lg-flexAlignContentStretch {
     -webkit-align-content: stretch !important;
@@ -3398,17 +2864,11 @@ hr {
     align-content: stretch !important;
   }
 
-
-
-
   .u-lg-flexAlignContentBetween {
     -webkit-align-content: space-between !important;
     -ms-flex-line-pack: justify !important;
     align-content: space-between !important;
   }
-
-
-
 
   .u-lg-flexAlignContentAround {
     -webkit-align-content: space-around !important;
@@ -3421,9 +2881,6 @@ hr {
    */
 
   /* postcss-bem-linter: ignore */
-
-
-
 
   .u-lg-flex > *,
   .u-lg-flexInline > * {
@@ -3441,17 +2898,11 @@ hr {
    * Override default alignment of single item when specified by `align-items`
    */
 
-
-
-
   .u-lg-flexAlignSelfStart {
     -webkit-align-self: flex-start !important;
     -ms-flex-item-align: start !important;
     align-self: flex-start !important;
   }
-
-
-
 
   .u-lg-flexAlignSelfEnd {
     -webkit-align-self: flex-end !important;
@@ -3459,17 +2910,11 @@ hr {
     align-self: flex-end !important;
   }
 
-
-
-
   .u-lg-flexAlignSelfCenter {
     -webkit-align-self: center !important;
     -ms-flex-item-align: center !important;
     align-self: center !important;
   }
-
-
-
 
   .u-lg-flexAlignSelfStretch {
     -webkit-align-self: stretch !important;
@@ -3477,17 +2922,11 @@ hr {
     align-self: stretch !important;
   }
 
-
-
-
   .u-lg-flexAlignSelfBaseline {
     -webkit-align-self: baseline !important;
     -ms-flex-item-align: baseline !important;
     align-self: baseline !important;
   }
-
-
-
 
   .u-lg-flexAlignSelfAuto {
     -webkit-align-self: auto !important;
@@ -3499,9 +2938,6 @@ hr {
    * Change order without editing underlying HTML
    */
 
-
-
-
   .u-lg-flexOrderFirst {
     -webkit-box-ordinal-group: 0 !important;
     -webkit-order: -1 !important;
@@ -3509,18 +2945,12 @@ hr {
     order: -1 !important;
   }
 
-
-
-
   .u-lg-flexOrderLast {
     -webkit-box-ordinal-group: 2 !important;
     -webkit-order: 1 !important;
     -ms-flex-order: 1 !important;
     order: 1 !important;
   }
-
-
-
 
   .u-lg-flexOrderNone {
     -webkit-box-ordinal-group: 1 !important;
@@ -3539,9 +2969,6 @@ hr {
    *    Use `0%` to avoid bug in IE10/11 with unitless flex basis - http://git.io/vllWx
    */
 
-
-
-
   .u-lg-flexGrow1 {
     -webkit-box-flex: 1 !important;
     -webkit-flex: 1 1 0% !important;
@@ -3551,18 +2978,12 @@ hr {
     /* 1 */
   }
 
-
-
-
   .u-lg-flexGrow2 {
     -webkit-box-flex: 2 !important;
     -webkit-flex: 2 1 0% !important;
     -ms-flex: 2 1 0% !important;
     flex: 2 1 0% !important;
   }
-
-
-
 
   .u-lg-flexGrow3 {
     -webkit-box-flex: 3 !important;
@@ -3571,18 +2992,12 @@ hr {
     flex: 3 1 0% !important;
   }
 
-
-
-
   .u-lg-flexGrow4 {
     -webkit-box-flex: 4 !important;
     -webkit-flex: 4 1 0% !important;
     -ms-flex: 4 1 0% !important;
     flex: 4 1 0% !important;
   }
-
-
-
 
   .u-lg-flexGrow5 {
     -webkit-box-flex: 5 !important;
@@ -3595,15 +3010,9 @@ hr {
    * Aligning with `auto` margins - http://www.w3.org/TR/css-flexbox-1/#auto-margins
    */
 
-
-
-
   .u-lg-flexExpandLeft {
     margin-left: auto !important;
   }
-
-
-
 
   .u-lg-flexExpandRight {
     margin-right: auto !important;
@@ -3623,9 +3032,6 @@ hr {
 
   /* postcss-bem-linter: ignore */
 
-
-
-
   [class*="u-lg-size"] {
     -webkit-flex-basis: auto !important;
     -ms-flex-preferred-size: auto !important;
@@ -3634,45 +3040,27 @@ hr {
     /* 1 */
   }
 
-
-
-
   .u-lg-size1of12 {
     width: 8.33333% !important;
   }
-
-
-
 
   .u-lg-size1of10 {
     width: 10% !important;
   }
 
-
-
-
   .u-lg-size1of8 {
     width: 12.5% !important;
   }
-
-
-
 
   .u-lg-size1of6,
   .u-lg-size2of12 {
     width: 16.66667% !important;
   }
 
-
-
-
   .u-lg-size1of5,
   .u-lg-size2of10 {
     width: 20% !important;
   }
-
-
-
 
   .u-lg-size1of4,
   .u-lg-size2of8,
@@ -3680,15 +3068,9 @@ hr {
     width: 25% !important;
   }
 
-
-
-
   .u-lg-size3of10 {
     width: 30% !important;
   }
-
-
-
 
   .u-lg-size1of3,
   .u-lg-size2of6,
@@ -3696,30 +3078,18 @@ hr {
     width: 33.33333% !important;
   }
 
-
-
-
   .u-lg-size3of8 {
     width: 37.5% !important;
   }
-
-
-
 
   .u-lg-size2of5,
   .u-lg-size4of10 {
     width: 40% !important;
   }
 
-
-
-
   .u-lg-size5of12 {
     width: 41.66667% !important;
   }
-
-
-
 
   .u-lg-size1of2,
   .u-lg-size2of4,
@@ -3730,30 +3100,18 @@ hr {
     width: 50% !important;
   }
 
-
-
-
   .u-lg-size7of12 {
     width: 58.33333% !important;
   }
-
-
-
 
   .u-lg-size3of5,
   .u-lg-size6of10 {
     width: 60% !important;
   }
 
-
-
-
   .u-lg-size5of8 {
     width: 62.5% !important;
   }
-
-
-
 
   .u-lg-size2of3,
   .u-lg-size4of6,
@@ -3761,15 +3119,9 @@ hr {
     width: 66.66667% !important;
   }
 
-
-
-
   .u-lg-size7of10 {
     width: 70% !important;
   }
-
-
-
 
   .u-lg-size3of4,
   .u-lg-size6of8,
@@ -3777,38 +3129,23 @@ hr {
     width: 75% !important;
   }
 
-
-
-
   .u-lg-size4of5,
   .u-lg-size8of10 {
     width: 80% !important;
   }
-
-
-
 
   .u-lg-size5of6,
   .u-lg-size10of12 {
     width: 83.33333% !important;
   }
 
-
-
-
   .u-lg-size7of8 {
     width: 87.5% !important;
   }
 
-
-
-
   .u-lg-size9of10 {
     width: 90% !important;
   }
-
-
-
 
   .u-lg-size11of12 {
     width: 91.66667% !important;
@@ -3823,9 +3160,6 @@ hr {
    * 1. Be explicit to work around IE10 bug with shorthand flex - http://git.io/vllC7
    * 2. IE10 ignores previous `flex-basis` value. Setting again here fixes - http://git.io/vllMt
    */
-
-
-
 
   .u-lg-sizeFill {
     -webkit-box-flex: 1 !important;
@@ -3848,9 +3182,6 @@ hr {
    * http://www.w3.org/TR/css-flexbox/images/rel-vs-abs-flex.svg
    */
 
-
-
-
   .u-lg-sizeFillAlt {
     -webkit-box-flex: 1 !important;
     -webkit-flex: 1 1 auto !important;
@@ -3865,17 +3196,11 @@ hr {
    * Make an element the width of its parent.
    */
 
-
-
-
   .u-lg-sizeFull {
     box-sizing: border-box !important;
     display: block !important;
     width: 100% !important;
   }
-
-
-
 
   html {
     font-size: 112.5%;
@@ -3884,179 +3209,11 @@ hr {
 
 @media (min-width:1280px) {
 
-
-
-
   .Media--onXLarge {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-@media @import "./css/mainfooter.css" {
-
-
-
-
-  .Timeline {
-    position: relative;
-  }
-
-
-
-
-  .Timeline-item {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-
-
-
-  .Timeline-img {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin-right: 1rem;
-  }
-
-
-
-
-  .Timeline-content {
-    -webkit-box-flex: 4;
-    -webkit-flex: 4;
-    -ms-flex: 4;
-    flex: 4;
-  }
-
-
-
-
-  @media (min-width:640px) {
-
-
-
-
-    .Timeline {
-      position: relative;
-    }
-
-
-
-
-    .Timeline::before {
-      background-color: #40cad6;
-      content: "";
-      height: 100%;
-      left: 50%;
-      position: absolute;
-      top: 0;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      width: 2px;
-    }
-
-
-
-
-    .Timeline-item {
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      margin-bottom: 1.5rem;
-      position: relative;
-    }
-
-
-
-
-    .Timeline-item::before {
-      background-color: #40cad6;
-      border-radius: 500px;
-      content: "";
-      height: 24px;
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 24px;
-    }
-
-
-
-
-    .Timeline-item > * {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1 1 0;
-      -ms-flex: 1 1 0;
-      flex: 1 1 0;
-    }
-
-
-
-
-    .Timeline-item:nth-child(2n+1) {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-      -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
-    }
-
-
-
-
-    .Timeline-item:nth-child(2n+2) {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-    }
-
-
-
-
-    .Timeline:nth-child(2n+1) .Timeline-content {
-      margin-right: 3rem;
-      text-align: right;
-    }
-
-
-
-
-    .Timeline:nth-child(2n+1) .Timeline-img {
-      margin-left: 3rem;
-      text-align: left;
-    }
-
-
-
-
-    .Timeline-item:nth-child(2n+2) .Timeline-content {
-      margin-left: 3rem;
-      text-align: left;
-    }
-
-
-
-
-    .Timeline-item:nth-child(2n+2) .Timeline-img {
-      margin-right: 3rem;
-      text-align: right;
-    }
   }
 }
 
