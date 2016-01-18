@@ -1412,6 +1412,10 @@ hr {
   background-color: #f3f3f3;
 }
 
+main {
+  margin-top: 48px;
+}
+
 @media screen and (min-width: 1280px) {
 
   .Section-title {

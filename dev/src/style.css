@@ -90,3 +90,7 @@ hr {
 .bg-white2 {
   background-color: #f3f3f3;
 }
+
+main {
+  margin-top: 48px;
+}

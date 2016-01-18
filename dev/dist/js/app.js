@@ -4454,6 +4454,7 @@ function ToggleNav() {
 	var navToggle = document.querySelector('.js-navToggle');
 	var MobileNav = document.querySelector('.MobileNav');
 	var navToggleClose = document.querySelector('.js-navToggleClose');
+
 	navToggle.addEventListener('click', function (evt) {
 		evt.preventDefault();
 		MobileNav.classList.add('is-active');
