@@ -337,6 +337,12 @@ h3,
   background-color: transparent;
   border: transparent;
 }
+
+
+.Button--primary {
+  background-color: #40cad6;
+  color: #fff;
+}
 .Figure--slideDown {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -1439,22 +1445,38 @@ main {
   margin-top: 48px;
 }
 
-.dropcap p:first-child:first-letter { 
-  float: left; 
-  color: #903; 
-  font-size: 75px; 
-  line-height: 60px; 
-  padding-top: 4px; 
-  padding-right: 8px; 
-  padding-left: 3px;
+.dropcap p:first-child:first-letter {
   color: #40cad6;
-  }
+  color: #903;
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-left: 3px;
+  padding-right: 8px;
+  padding-top: 4px;
+}
 
-  .u-textWhite {
-    color: rgba(255,255,255, 0.9);
-  }
+.u-textWhite {
+  color: rgba(255,255,255, 0.9);
+}
 
-  @media screen and (min-width: 1280px) {
+.socialmed a {
+  font-size: 12px;
+}
+
+.socialmed-m {
+  font-size: 24px!important;
+}
+
+.socialmed-m a {
+  margin-left: 1rem;
+}
+
+.socialmed-m:first-child a {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 1280px) {
 
   .Section-title {
     font-size: 2rem;
@@ -1465,7 +1487,7 @@ main {
   }
 }
 
-  @media screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {
 
   .Section-title {
     font-size: 1.25rem;
@@ -1476,7 +1498,7 @@ main {
   }
 }
 
-  @media  (max-width:640px) {
+@media  (max-width:640px) {
 
   .Media--onSmall {
     display: -webkit-box;
@@ -2029,7 +2051,7 @@ main {
   }
 }
 
-  @media (min-width:640px) {
+@media (min-width:640px) {
 
   .Media--onMedium {
     display: -webkit-box;
@@ -2671,7 +2693,7 @@ main {
   }
 }
 
-  @media (min-width:960px) {
+@media (min-width:960px) {
 
   .Media--onLarge {
     display: -webkit-box;
@@ -3267,7 +3289,7 @@ main {
   }
 }
 
-  @media (min-width:1280px) {
+@media (min-width:1280px) {
 
   .Media--onXLarge {
     display: -webkit-box;
@@ -3276,4 +3298,5 @@ main {
     display: flex;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

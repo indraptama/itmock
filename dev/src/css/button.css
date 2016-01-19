@@ -12,3 +12,9 @@
   background-color: transparent;
   border: transparent;
 }
+
+
+.Button--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
