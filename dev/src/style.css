@@ -14,6 +14,7 @@
 
 /* block */
 @import "./css/mainheader.css";
+@import "./css/mainfooter.css";
 @import "./css/hero.css";
 @import "./css/timeline.css";
 
@@ -75,6 +76,7 @@ hr {
 @media (--md-viewport) {
   .u-md-col2 {
     column-count: 2;
+    column-gap: 1.5rem;
   }
 }
 
@@ -94,3 +96,29 @@ hr {
 main {
   margin-top: 48px;
 }
+
+
+@media (--lg-viewport) {
+  .u-lg-col3 {
+    column-count: 3;
+    -webkit-column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+    -o-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+  }
+}
+
+.dropcap p:first-child:first-letter { 
+  float: left; 
+  color: #903; 
+  font-size: 75px; 
+  line-height: 60px; 
+  padding-top: 4px; 
+  padding-right: 8px; 
+  padding-left: 3px;
+  color: var(--color-primary);
+  }
+
+  .u-textWhite {
+    color: rgba(#fff, 0.9);
+  }

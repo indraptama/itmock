@@ -4446,6 +4446,10 @@ var _figureBg = require('./js/figure-bg.js');
 
 var _figureBg2 = _interopRequireDefault(_figureBg);
 
+var _imgfill = require('./js/vendor/imgfill.js');
+
+var _imgfill2 = _interopRequireDefault(_imgfill);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _figureBg2.default)();
@@ -4467,8 +4471,9 @@ function ToggleNav() {
 }
 
 ToggleNav();
+(0, _imgfill2.default)('.imgFill', '.imgFillSrc');
 
-},{"./js/figure-bg.js":28,"./js/tabs.js":29,"node-vibrant":2,"page":22,"whatwg-fetch":26}],28:[function(require,module,exports){
+},{"./js/figure-bg.js":28,"./js/tabs.js":29,"./js/vendor/imgfill.js":30,"node-vibrant":2,"page":22,"whatwg-fetch":26}],28:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -4549,6 +4554,68 @@ var Tabs = function Tabs() {
 };
 
 exports.default = Tabs;
+
+},{}],30:[function(require,module,exports){
+'use strict';
+
+// usage:
+// imgFill(target, imgSrc)
+// require es6
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var setCSS = function setCSS(element) {
+  var CSS = {
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  };
+  // create multiple CSS Property
+  for (var i in CSS) {
+    element.style[i] = CSS[i];
+  }
+};
+
+var imgFill = function imgFill(target, srcClass) {
+  var imgConts = Array.from(document.querySelectorAll(target));
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = imgConts[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var img = _step.value;
+
+      // define image source class
+      var imgSrc = img.querySelector(srcClass);
+
+      // Get image source url
+      var imgSrcURL = imgSrc.getAttribute('src');
+
+      // hide source images
+      imgSrc.style.display = 'none';
+      // Set Multiple CSS Property
+      img.style.backgroundImage = 'url(' + imgSrcURL + ')';
+      setCSS(img);
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+};
+
+exports.default = imgFill;
 
 },{}]},{},[27])
 

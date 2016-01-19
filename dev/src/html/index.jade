@@ -1,11 +1,12 @@
 extends partial/default.jade
 block content
-  .Hero.u-textCenter
+  .Hero.u-textCenter.imgFill
     .Hero-image
+      img.imgFillSrc(src="/asset/img/cards-hero2.jpg", alt="")
     .Hero-content
       .Container
-        h1.Hero-title End to end loyalty solutions
-        p we are bringing loyalty to the next level.
+        h1.Hero-title.u-textLeft.u-textWhite End to end loyalty solutions
+        p.u-textLeft.u-textWhite we are bringing loyalty to the next level.
     .Hero-action
   
   section.py3
@@ -15,21 +16,21 @@ block content
       article.u-textCenter.hack-Grid-flipL
         .Grid.Grid--withGutter.Grid--alignMiddle
           .Grid-cell.u-md-size1of2
-            img(src="/asset/img/engine.svg", alt="")
+            img(src="/asset/img/ill/engine2.svg", alt="")
           .Grid-cell.u-md-size1of2
             .Container.Container--full.Container--small
               h3 Loyalty Engine
               p Building a comprehensive and sound blueprint is jus as important as the development it self. Let our experience advisor lead you all the way.
         .Grid.Grid--withGutter.Grid--alignMiddle
           .Grid-cell.u-md-size1of2
-            img(src="/asset/img/platform.svg", alt="")
+            img(src="/asset/img/ill/platform.svg", alt="")
           .Grid-cell.u-md-size1of2
             .Container.Container--full.Container--small
               h3 Platform
               p Having your own ideal platform for your system does not have to be expensive and takes a long time. We are providing all range of options for your needs.
         .Grid.Grid--withGutter.Grid--alignMiddle
           .Grid-cell.u-md-size1of2
-            img(src="/asset/img/network.svg", alt="")
+            img(src="/asset/img/ill/link.svg", alt="")
           .Grid-cell.u-md-size1of2
             .Container.Container--full.Container--small
               h3 Marchant Network
@@ -61,7 +62,8 @@ block content
               .Media-content
                 h3 payment
                 p Only pay for the eVouchers that has been successfully claimed at the merchant.
-          .Grid-cell.u-md-size1of2
+          .Grid-cell.u-md-size1of2.u-textCenter.u-sm-flexOrderFirst.mb3
+            img(src="/asset/img/mockup-depan.png", alt="")
   
   section.py3
     .Container

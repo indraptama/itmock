@@ -3,6 +3,7 @@ import fetch from 'whatwg-fetch';
 import Tabs from './js/tabs.js';
 import Vibrant from 'node-vibrant';
 import FigureBg from './js/figure-bg.js';
+import imgFill from './js/vendor/imgfill.js';
 
 FigureBg();
 
@@ -25,3 +26,4 @@ function ToggleNav() {
 }
 
 ToggleNav();
+imgFill('.imgFill', '.imgFillSrc');

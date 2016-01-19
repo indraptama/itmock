@@ -1,0 +1,28 @@
+.MainFooter {
+	background-color: rgba(#222,87);
+	color: rgba(#fff,0.55);
+}
+
+.MainFooter a {
+	color: rgba(#fff,0.25);
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 8px;
+	margin-left: 8px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: all 250ms ease;
+	font-size: 0.65rem;
+}
+
+.MainFooter a:hover {
+	color: rgba(#fff,0.85);
+	transition: all 250ms ease;
+}
+
+@media (--sm-viewport) {
+	.MainFooter a {
+		height: 48px;
+		margin: 0;
+	}
+}
