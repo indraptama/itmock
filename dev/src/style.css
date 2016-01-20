@@ -28,7 +28,10 @@
 
 /* Variable */
 :root {
-  --color-primary: #40cad6;
+  --color-primary: #0091EA;
+  --color-dark-primary: #01579B;
+  --color-body-text: rgba(#263238, 0.87);
+  --color-header-text: #1A237E;
 }
 
 @custom-media --sm-viewport  (max-width:640px);
@@ -109,8 +112,7 @@ main {
 }
 
 .dropcap p:first-child:first-letter {
-  color: var(--color-primary);
-  color: #903;
+  color: var(--color-header-text);
   float: left;
   font-size: 75px;
   line-height: 60px;

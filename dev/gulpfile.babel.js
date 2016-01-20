@@ -10,7 +10,6 @@ import runSequence from 'run-sequence';
 import source from 'vinyl-source-stream';
 import sourcemaps from 'gulp-sourcemaps';
 import watchify from 'watchify';
-import uglify from 'gulp-uglify';
 import riotify from 'riotify';
 import newer from 'gulp-newer';
 // HTML
@@ -34,6 +33,12 @@ import inputStyle from 'postcss-input-style';
 import mqPacker from 'css-mqpacker';
 import nested from 'postcss-nested';
 import resType from 'postcss-responsive-type';
+
+
+// Build package
+import cssNano from 'gulp-cssnano';
+import uglify from 'gulp-uglify';
+
 
 const paths = {
   bundle: 'app.js',
@@ -72,6 +77,16 @@ gulp.task('html', () => {
   .pipe(reload({ stream: true }));
 });
 
+gulp.task('htmlBuild', () => {
+  gulp.src(paths.srcJADE)
+  .pipe(sourcemaps.init())
+  .pipe(jade())
+  .on('error', notify.onError())
+  .pipe(sourcemaps.write('.'))
+  .pipe(gulp.dest(paths.dist))
+  .pipe(reload({ stream: true }));
+});
+
 // CSS TASK
 const cssProcess = [
   cssImport,
@@ -98,6 +113,18 @@ gulp.task('styles', () => {
   .pipe(gulp.dest(paths.distCSS))
   .pipe(reload({ stream: true }));
 });
+
+
+gulp.task('stylesBuild', () => {
+  gulp.src(paths.srcCSS)
+  .pipe(sourcemaps.init())
+  .pipe(postcss(cssProcess))
+  .on('error', notify.onError())
+  .pipe(cssNano())
+  .pipe(gulp.dest(paths.distCSS))
+  .pipe(reload({ stream: true }));
+});
+
 
 // JS Task
 gulp.task('watchify', () => {
@@ -225,5 +252,5 @@ gulp.task('watchRiot', cb => {
 
 gulp.task('build', cb => {
   process.env.NODE_ENV = 'production';
-  runSequence('clean', ['browserify', 'styles', 'html', 'copies'], cb);
+  runSequence('clean', ['browserify', 'stylesBuild', 'htmlBuild', 'copies'], cb);
 });

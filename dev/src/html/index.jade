@@ -1,22 +1,22 @@
 extends partial/default.jade
 block content
-  .Hero.u-textCenter.imgFill
+  .Hero.u-textCenter
     .Hero-image
-      img.imgFillSrc(src="/asset/img/cards-hero2.jpg", alt="")
+      #particles-js
     .Hero-content
       .Container
-        h1.Hero-title.u-textLeft.u-textWhite End to end loyalty solutions
-        p.u-textLeft.u-textWhite we are bringing loyalty to the next level.
+        h1.Hero-title End to end loyalty solutions
+        p we are bringing loyalty to the next level.
     .Hero-action
   
   section.py3
     .Container
-      header.Section-header.u-textCenter
+      header.Section-header.u-textCenter.mb0
         h2.Section-title our services
       article.u-textCenter.hack-Grid-flipL
         .Grid.Grid--withGutter.Grid--alignMiddle
           .Grid-cell.u-md-size1of2
-            img(src="/asset/img/ill/engine2.svg", alt="")
+            img(src="/asset/img/ill/buildengine.svg", alt="")
           .Grid-cell.u-md-size1of2
             .Container.Container--full.Container--small
               h3 Loyalty Engine
@@ -46,19 +46,19 @@ block content
           .Grid-cell.u-md-size1of2
             .Media.u-mB1
               .Media-img
-                img.icon-medium(src="asset/img/truck.svg", alt="")
+                img.icon-medium.mr2(src="asset/img/icon/basic_download.svg", alt="")
               .Media-content
                 h3 Distributions
                 p eVouchers can be distributed electronically (via SMS, Mobile App, Email)
             .Media.u-mB1
               .Media-img
-                img.icon-medium(src="asset/img/calc.svg", alt="")
+                img.icon-medium.mr2(src="asset/img/icon/printer.svg", alt="")
               .Media-content
                 h3 Reporting
                 p eVouchers will be recorded in real-time on web-based tool
             .Media.u-mB1
               .Media-img
-                img.icon-medium(src="asset/img/bank.svg", alt="")
+                img.icon-medium.mr2(src="asset/img/icon/moneybag.svg", alt="")
               .Media-content
                 h3 payment
                 p Only pay for the eVouchers that has been successfully claimed at the merchant.
