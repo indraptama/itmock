@@ -453,8 +453,8 @@ h3 {
 	background: rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.5);
 	/*Pushing down the shadow to give an elevated feel*/
-	-webkit-transform: translateZ(-50px);
-	        transform: translateZ(-50px);
+	-webkit-transform: translateZ(-10px);
+	        transform: translateZ(-10px);
 }
 
 /* block */
