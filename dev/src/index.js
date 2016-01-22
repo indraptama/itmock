@@ -35,7 +35,7 @@ imgFill('.imgFill', '.imgFillSrc');
 
 
 
-// Vanilla
-document.addEventListener('DOMContentLoaded', function() {
-	particlesJS.load('particles-js', '../asset/js/particlesjs-config1.json', function() {console.log('callback - particles.js config loaded');});
-})
+// // Vanilla
+// document.addEventListener('DOMContentLoaded', function() {
+// 	particlesJS.load('particles-js', '../asset/js/particlesjs-config1.json', function() {console.log('callback - particles.js config loaded');});
+// })

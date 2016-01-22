@@ -90,7 +90,7 @@ gulp.task('htmlBuild', () => {
 // CSS TASK
 const cssProcess = [
   cssImport,
-  bemLinter,
+  // bemLinter,
   _vars,
   cssMedia,
   inputStyle,

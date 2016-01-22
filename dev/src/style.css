@@ -11,6 +11,7 @@
 @import "suitcss-components-button";
 @import "./css/button.css";
 @import "./css/figure.css";
+@import "./css/isometric-mockup.css";
 
 /* block */
 @import "./css/mainheader.css";
@@ -28,28 +29,37 @@
 
 /* Variable */
 :root {
-  --color-primary: #0091EA;
-  --color-dark-primary: #01579B;
   --color-body-text: rgba(#263238, 0.87);
-  --color-header-text: #1A237E;
+  --color-dark-primary: #01579b;
+  --color-header-text: #1a237e;
+  --color-primary: #0091ea;
+  --font-body: "europa";
+  --font-code: console;
+  --font-header: "europa";
+  --font-quote: serif;
 }
 
-@custom-media --sm-viewport  (max-width:640px);
-@custom-media --md-viewport (min-width:640px);
-@custom-media --lg-viewport (min-width:960px);
-@custom-media --xl-viewport (min-width:1280px);
-
+@custom-media --sm-viewport  screen and (max-width:640px);
+@custom-media --md-viewport screen and (min-width:640px);
+@custom-media --lg-viewport screen and (min-width:960px);
+@custom-media --xl-viewport screen and (min-width:1280px);
 
 
 html {
   background-color: #fcfcfc;
-  font-family: "roboto";
-  font-size: 100%;
+  font-family: var(--font-body);
+  font-size: 87.5%;
   font-weight: 300;
   line-height: 1.5;
 }
 
 @media (--lg-viewport) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (--xl-viewport) {
   html {
     font-size: 112.5%;
   }
@@ -70,10 +80,6 @@ hr {
 
 .icon-medium {
   max-width: 64px;
-}
-
-.Section-header {
-  margin-bottom: 3rem;
 }
 
 @media (--md-viewport) {

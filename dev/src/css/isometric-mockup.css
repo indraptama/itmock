@@ -1,0 +1,59 @@
+.IsometricSlider {
+
+}
+
+.IsometricSlider-container {
+	display: flex;
+	transform: rotateX(54.736deg) rotateZ(-45deg);
+	transform-style: preserve-3d;
+}
+
+.IsometricSlider-content {
+
+}
+
+.IsometricSlider-item {
+	height: 400px; width: 225px;
+	margin: 0 0.75rem;
+
+	/*Hide the lighting gradient from the front face*/
+
+	/*Preserve 3D style for children(pseudo elements)*/
+	transform-style: preserve-3d;
+}
+
+.IsometricSlider-item:before, 
+.IsometricSlider-item:after {
+	content: '';
+	position: absolute;
+	/*100% height and width*/
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: inherit;
+	background-size: cover;
+}
+
+.IsometricSlider-item:before {
+	transform-origin: left center;
+	transform: rotateY(90deg);
+	/*Reducing the width of the left side for a flat feel*/
+	width: 5px;
+}
+.IsometricSlider-item:after {
+	transform-origin: bottom center;
+	transform: rotateX(90deg);
+	/*Reducing the height*/
+	height: 5px; top: auto; bottom: 0;
+	/*Background fix - start the background from the bottom*/
+	background-position: bottom center;
+}
+
+.IsometricSlider-shadow {
+	position: absolute;
+	/*30px smaller from each side*/
+	top: 30px; left: 30px; right: 30px; bottom: 30px;
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.5);
+	/*Pushing down the shadow to give an elevated feel*/
+	transform: translateZ(-50px);
+}
+
