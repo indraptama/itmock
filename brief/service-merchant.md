@@ -7,10 +7,7 @@ Moreover, our eVoucher MORE service is fully connected with more than 22,000 mer
 
 
 What? 
-An electronic vouchers platforms that can be distributed instantly via:
-sms
-mobile app
-physical vouchers
+An electronic vouchers platforms that can be distributed instantly via sms, mobile app, physical vouchers.
 
 Why? 
 - Logistic & Distributions

@@ -1,4 +1,5 @@
 /** @define Button */
+
 .Button {
   border-radius: 2px;
   font-size: 0.75rem;
@@ -13,8 +14,16 @@
   border: transparent;
 }
 
-
 .Button--primary {
   background-color: var(--color-primary);
   color: #fff;
+}
+
+.Button--primary:hover {
+  box-shadow: 0, 0, 5px, 5px, rgba(#000,.1);
+  color: #fff;
+}
+
+.Button--large {
+  padding: 1rem 4.5rem;
 }

@@ -1,77 +1,75 @@
 extends partial/default.jade
 include partial/mockup.jade
 block content
-  .Hero.Hero--hight-oneTree
+  .Hero
     .Hero-image
+      .IsometricSlider
+        .IsometricSlider-container
+          .IsometricSlider-item.imgFill
+            span.IsometricSlider-shadow
+            img.imgFillSrc(src="asset/img/ss/ss1.png", alt="")
+          .IsometricSlider-item.imgFill
+            span.IsometricSlider-shadow
+            img.imgFillSrc(src="asset/img/ss/ss2.png", alt="")
+          .IsometricSlider-item.imgFill
+            span.IsometricSlider-shadow
+            img.imgFillSrc(src="asset/img/ss/ss3.png", alt="")
+          .IsometricSlider-item.imgFill
+            span.IsometricSlider-shadow
+            img.imgFillSrc(src="asset/img/ss/ss4.png", alt="")
+          .IsometricSlider-item.imgFill
+            span.IsometricSlider-shadow
+            img.imgFillSrc(src="asset/img/ss/ss5.png", alt="")
     .Hero-content
       .Container.u-textCenter
         h2.Section-title app center
         h1.Hero-title Application own & developed by us
         .Container.Container--small
           p We have developed beyond application. It is from system intergration and development to managed service.
-  
-
-
-  .IsometricSlider
-    .IsometricSlider-container
-      .IsometricSlider-item.imgFill
-        span.IsometricSlider-shadow
-        img.imgFillSrc(src="asset/img/ss/ss1.png", alt="")
-      .IsometricSlider-item.imgFill
-        span.IsometricSlider-shadow
-        img.imgFillSrc(src="asset/img/ss/ss2.png", alt="")
-      .IsometricSlider-item.imgFill
-        span.IsometricSlider-shadow
-        img.imgFillSrc(src="asset/img/ss/ss3.png", alt="")
-      .IsometricSlider-item.imgFill
-        span.IsometricSlider-shadow
-        img.imgFillSrc(src="asset/img/ss/ss4.png", alt="")
-
-
-
-  .Container
-    .Grid.Grid--alignRight.py3
-      .Grid-cell.u-textLeft
+  .Container.py4
+    .Grid.Grid--withGutter.Grid--alignRight.py3
+      .Grid-cell.u-md-size1of2.u-textLeft
         +mockupLeft(imgsrc="/asset/img/mockup/alacard.png")
+        
       .Grid-cell.u-md-size1of2
         .Container.Container--full
-          // img.icon-medium(src="/asset/img/logo/alacard.png", alt="")
+          img.icon-medium.mb2(src="/asset/img/logo/alacard.png", alt="")
           h3 AlaCard
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quaerat eaque vero aspernatur eum id recusandae, nulla at veritatis in, similique numquam impedit neque commodi repudiandae odit quam voluptatum mollitia!
           .u-flexx
-            a(href="") 
+            a.mr2(href="") 
               img(src="asset/img/logo/playstore.png", alt="")
-            a(href="")
+            a.mr2(href="")
               img(src="asset/img/logo/applestore.svg", alt="")
     hr
-    .Grid.Grid--alignRight.py3
-      .Grid-cell.u-textLeft
+    .Grid.Grid--withGutter.Grid--alignRight.py3
+      .Grid-cell.u-md-size1of2.u-textLeft
         +mockupLeft(imgsrc="/asset/img/mockup/alfa.png")
       .Grid-cell.u-md-size1of2
         .Container.Container--full
-          img.icon-medium(src="/asset/img/logo/alfamart.jpg", alt="")
+          img.icon-medium.mb2(src="/asset/img/logo/alfamart.jpg", alt="")
           h3 Alfa Gift
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quaerat eaque vero aspernatur eum id recusandae, nulla at veritatis in, similique numquam impedit neque commodi repudiandae odit quam voluptatum mollitia!
           .u-flexx
-            a(href="") 
+            a.mr2(href="") 
               img(src="asset/img/logo/playstore.png", alt="")
-            a(href="")
+            a.mr2(href="")
               img(src="asset/img/logo/applestore.svg", alt="")
     hr
-    .Grid.Grid--alignRight.py3
-      .Grid-cell.u-textLeft
+    .Grid.Grid--withGutter.Grid--alignRight.py3
+      .Grid-cell.u-md-size1of2.u-textLeft
         +mockupLeft(imgsrc="/asset/img/mockup/indosat.png")
       .Grid-cell.u-md-size1of2
         .Container.Container--full
-          img.icon-medium(src="/asset/img/logo/indosat2.jpg", alt="")
+          img.icon-medium.mb2(src="/asset/img/logo/indosat2.jpg", alt="")
           h3 Indosat Ooredoo
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quaerat eaque vero aspernatur eum id recusandae, nulla at veritatis in, similique numquam impedit neque commodi repudiandae odit quam voluptatum mollitia!
           .u-flexx
-            a(href="") 
+            a.mr2(href="") 
               img(src="asset/img/logo/playstore.png", alt="")
-            a(href="")
+            a.mr2(href="")
               img(src="asset/img/logo/applestore.svg", alt="")
     
   .Container.py3.u-textCenter
-    a.Button.Button--primary.Button--long.px4(href="#") Load More
+    a.Button.Button--primary.Button--large.px4(href="#") Load More
       

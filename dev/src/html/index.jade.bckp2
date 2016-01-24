@@ -1,11 +1,8 @@
-include partial/indopulse.jade
 extends partial/default.jade
-
 block content
   .Hero.u-textCenter
     .Hero-image
-      // #particles-js
-      +indopulse
+      #particles-js
     .Hero-content
       .Container
         h1.Hero-title End to end loyalty solutions
@@ -40,13 +37,13 @@ block content
               p loyalty system will be appreciated ud ut can be redeemed at favourite merchants. We will make sure your system is fully connected with seamless.
             
   
-  section.py4.bg-light-grey
+  section.py4
     .Container
       header.Section-header.u-textCenter
         h2.Section-title Electornic Vouchers redemption
       article
-        .Grid.Grid--alignMiddle
-          .Grid-cell.u-md-size1of3
+        .Grid
+          .Grid-cell.u-md-size1of2
             .Media.u-mB1
               .Media-img
                 img.icon-medium.mr2(src="asset/img/icon/basic_download.svg", alt="")
@@ -59,121 +56,104 @@ block content
               .Media-content
                 h3 Reporting
                 p eVouchers will be recorded in real-time on web-based tool
-          .Grid-cell.u-md-size1of3.u-textCenter.u-sm-flexOrderFirst.mb3
-            img.home-mockup(src="/asset/img/mockup/iphone-home.png", alt="")
-          .Grid-cell.u-md-size1of3
             .Media.u-mB1
               .Media-img
                 img.icon-medium.mr2(src="asset/img/icon/moneybag.svg", alt="")
               .Media-content
                 h3 payment
                 p Only pay for the eVouchers that has been successfully claimed at the merchant.
-        
-  section.pt4
+          .Grid-cell.u-md-size1of2.u-textCenter.u-sm-flexOrderFirst.mb3
+            img.home-mockup(src="/asset/img/mockup/iphonefront.png", alt="")
+  
+  section.pt4.bg-light-grey
     .Container
       header.Section-header.u-textCenter
         h2.Section-title Issuer
       section
         .Grid
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/alfamart.jpg", alt="")
               figcaption Alfamart
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/alliance.jpg", alt="")
               figcaption allianz
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/acc.jpg", alt="")
               figcaption ACC
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/auto2000.jpg", alt="")
               figcaption Auto2000
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/indosat2.jpg", alt="")
               figcaption Indosat
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/luft.jpg", alt="")
               figcaption Luft
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/line.jpg", alt="")
               figcaption Line
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/lotte.jpg", alt="")
               figcaption LotteMart
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/kfc.jpg", alt="")
               figcaption KFC
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/shell.jpg", alt="")
               figcaption Shell
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
-              img(src="asset/img/logo/superdry.jpg", alt="")
-              figcaption superdry
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
-              img(src="asset/img/logo/lotte.jpg", alt="")
-              figcaption LotteMart
     .Container.pt3.pb4
       header.Section-header.u-textCenter
         h2.Section-title merchants
       section
         .Grid
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/alfamart.jpg", alt="")
               figcaption Alfamart
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/blitz.jpg", alt="")
               figcaption CGV blitz
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/dq.jpg", alt="")
               figcaption Dairy Queen
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/acc.jpg", alt="")
               figcaption ACC
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/auto2000.jpg", alt="")
               figcaption Auto2000
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/kfc.jpg", alt="")
               figcaption KFC
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/shell.jpg", alt="")
               figcaption Shell
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/standar.jpg", alt="")
               figcaption standar
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/superdry.jpg", alt="")
               figcaption superdry
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
+          .Grid-cell.u-size1of3.u-lg-size1of5
+            figure.Figure--slideDown
               img(src="asset/img/logo/lotte.jpg", alt="")
               figcaption LotteMart
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
-              img(src="asset/img/logo/luft.jpg", alt="")
-              figcaption Luft
-          .Grid-cell.u-size1of3.u-lg-size1of6
-            figure.Figure--slideDown.u-imgBwToCol 
-              img(src="asset/img/logo/line.jpg", alt="")
-              figcaption Line
           

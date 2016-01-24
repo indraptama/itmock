@@ -80,6 +80,8 @@
     "suitcss-utils-flex": "^1.0.0",
     "suitcss-utils-size": "^1.0.1",
     "suitcss-utils-text": "^0.4.2",
+    "tiny-slider": "0.0.0",
+    "vivus": "^0.3.0",
     "whatwg-fetch": "*"
   }
 }

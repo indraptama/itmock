@@ -4,7 +4,7 @@
 
 html {
   background-color: #fcfcfc;
-  font-family: "europa";
+  font-family: "open sans";
   font-size: 87.5%;
   font-weight: 300;
   line-height: 1.5;
@@ -12,7 +12,7 @@ html {
 
 body {
   color: rgba(38,50,56, 0.87);
-  
+
 }
 
 h1,
@@ -25,6 +25,16 @@ h6 {
   margin-top: 0;
 }
 
+h3 {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+
+/* paragraph */
+
 p {
   margin-bottom: 1.5em;
 }
@@ -33,16 +43,55 @@ p + p {
   margin-bottom: 1.5rem;
 }
 
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+/* DropCaps */
+.dropcap p:first-child:first-letter {
+  color: #1a237e;
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-left: 3px;
+  padding-right: 8px;
+  padding-top: 4px;
+}
+
+/* Section Header */
+
+.Section-header {
+  margin-bottom: 1.5rem;
+}
+
 .Section-title {
   font-size: calc(1.25rem + 0.75 * ((100vw - 26.25rem) / 53.75));
   font-weight: 200;
   text-transform: capitalize;
 }
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
 
-h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 0;
+.u-imgBwToCol img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+, Firefox on Android */
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-filter: gray;
+          filter: gray;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  opacity: 0.25;
+}
+ 
+.u-imgBwToCol:hover img, .u-imgBwToCol:focus img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: none;
+          filter: none;
+  opacity: 1;
 }
 
 /* components */
@@ -334,6 +383,7 @@ h3 {
   opacity: 0.6;
 }
 /** @define Button */
+
 .Button {
   border-radius: 2px;
   font-size: 0.75rem;
@@ -348,10 +398,18 @@ h3 {
   border: transparent;
 }
 
-
 .Button--primary {
   background-color: #0091ea;
   color: #fff;
+}
+
+.Button--primary:hover, .Button--primary:focus {
+  box-shadow: 0, 0, 5px, 5px, rgba(0,0,0,.1);
+  color: #fff;
+}
+
+.Button--large {
+  padding: 1rem 4.5rem;
 }
 .Figure--slideDown {
   -webkit-backface-visibility: hidden;
@@ -386,9 +444,12 @@ h3 {
   transition: transform 250ms ease, -webkit-transform 250ms ease;
   width: 100%;
   z-index: -1;
+  font-size: 0.875rem;
+  opacity: 0;
 }
 .IsometricSlider {
-	
+	width: 100%;
+	position: relative;
 }
 
 .IsometricSlider-container {
@@ -400,19 +461,24 @@ h3 {
 	        transform: rotateX(54.736deg) rotateZ(-45deg);
 	-webkit-transform-style: preserve-3d;
 	        transform-style: preserve-3d;
+	bottom: 0;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .IsometricSlider-content {
-
+	
 }
 
 .IsometricSlider-item {
-	height: 400px; width: 225px;
+	height: 400px;
+	width: 225px;
 	margin: 0 0.75rem;
-
-	/*Hide the lighting gradient from the front face*/
-
-	/*Preserve 3D style for children(pseudo elements)*/
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
 	-webkit-transform-style: preserve-3d;
 	        transform-style: preserve-3d;
 }
@@ -421,8 +487,10 @@ h3 {
 .IsometricSlider-item:after {
 	content: '';
 	position: absolute;
-	/*100% height and width*/
-	top: 0; left: 0; right: 0; bottom: 0;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0;
 	background: inherit;
 	background-size: cover;
 }
@@ -432,7 +500,6 @@ h3 {
 	        transform-origin: left center;
 	-webkit-transform: rotateY(90deg);
 	        transform: rotateY(90deg);
-	/*Reducing the width of the left side for a flat feel*/
 	width: 5px;
 }
 .IsometricSlider-item:after {
@@ -440,9 +507,7 @@ h3 {
 	        transform-origin: bottom center;
 	-webkit-transform: rotateX(90deg);
 	        transform: rotateX(90deg);
-	/*Reducing the height*/
 	height: 5px; top: auto; bottom: 0;
-	/*Background fix - start the background from the bottom*/
 	background-position: bottom center;
 }
 
@@ -460,12 +525,12 @@ h3 {
 /* block */
 .MainHeader {
 	position: relative;
-  background-color: #fff;
-  box-shadow: 0 2px 5px 0px rgba(0,0,0,0);
+  background-color: #fcfcfc;
+  box-shadow: 0 1px 0 0 hsla(0,0%,57%,.2);
 }
 
 .MainHeader.MainHeader-onScroll {
-  box-shadow: 0 2px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 0 0 hsla(0,0%,57%,.2);
   position: fixed;
   top: 0;
   left: 0;
@@ -545,7 +610,7 @@ h3 {
   bottom: 0;
   left: 0;
   z-index: 9999;
-  background-color: #fff;
+  background-color: #fcfcfc;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -633,7 +698,7 @@ h3 {
   margin:0;
   font-size: 24px;
   background-color: #0091ea;
-  color: #fff;
+  color: #fcfcfc;
   border-radius: 2px;
   text-decoration: none;
   text-align: center;
@@ -718,6 +783,10 @@ h3 {
 
 .Hero--hight-oneTree {
   min-height: 66.66vh;
+}
+
+#particle-slider {
+  height: 500px;
 }
 .Timeline {
   position: relative;
@@ -1487,20 +1556,50 @@ h3 {
 .c11 { box-sizing: border-box; width: 91.66667% }
 .c12 { box-sizing: border-box; width: 100% }
 
+
+/* JS */
+.tiny-slider{overflow:hidden}
+.tiny-slider.ms-touch{overflow-x:scroll;overflow-y:hidden;-ms-overflow-style:none;-ms-scroll-chaining:none;-ms-scroll-snap-type:mandatory;-ms-scroll-snap-points-x:snapInterval(0%, 100%)}
+.tiny-content{position:relative;left:0;-webkit-transition:transform 0s;-webkit-transition: -webkit-transform 0s;transition: -webkit-transform 0s;transition: transform 0s;transition:transform 0s, -webkit-transform 0s}
+.tiny-content:after{content:'';display:table;clear:both}
+.tiny-content>div,
+.tiny-content>li,
+.tiny-content>span,
+.tiny-content>a{float:left;box-sizing:border-box}
+.tiny-prev,
+.tiny-next,
+.tiny-dot{cursor:pointer}
+.tiny-hide{display:none}
+.tiny-lazy{-webkit-transition:opacity 0.6s;transition:opacity 0.6s;opacity:0.6}
+.tiny-lazy.loaded{opacity:1}
+
 /* Variable */
+
+/*
+$global-width: rem-calc(1140);
+$global-font-size: 100%;
+$global-lineheight: 1.5;
+$primary-color: #2199e8;
+$secondary-color: #777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #CFD8DC;
+$medium-gray: #78909C;
+$dark-gray: #455A64;
+$black: #263238;
+$white: #fefefe;
+*/
+:root { /* ECEFF1; */
+}
 
 
 html {
   background-color: #fcfcfc;
-  font-family: "europa";
+  font-family: "open sans";
   font-size: 87.5%;
   font-weight: 300;
   line-height: 1.5;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: middle;
 }
 
 .hack-Grid-flipL .Grid:nth-child(2n+1) {
@@ -1532,19 +1631,14 @@ hr {
   background-color: #f3f3f3;
 }
 
+.bg-light-grey {
+  background-color: #f0ecf1;
+}
+
 main {
   margin-top: 48px;
 }
 
-.dropcap p:first-child:first-letter {
-  color: #1a237e;
-  float: left;
-  font-size: 75px;
-  line-height: 60px;
-  padding-left: 3px;
-  padding-right: 8px;
-  padding-top: 4px;
-}
 
 .u-textWhite {
   color: rgba(255,255,255, 0.9);
@@ -1564,6 +1658,37 @@ main {
 
 .socialmed-m:first-child a {
   margin-left: 0;
+}
+
+.home-mockup {
+  min-width: 256px;
+  height: auto;
+  max-width: none;
+}
+
+.indosvg svg .pulse {
+  opacity: 0.5;
+}
+
+.AppSlider {
+  position: relative;
+}
+
+.AppSlider-device {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 256px;
+}
+
+.AppSlider-content {
+  padding-top: 64px;
+}
+
+#link-img {
+  height: 320px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1606,8 +1731,10 @@ main {
     margin: 0;
   }
 
+
   /* Applies to flex container
      ========================================================================== */
+
 
   /**
    * Container
@@ -1626,6 +1753,7 @@ main {
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
+
 
   /**
    * Direction: row
@@ -1647,6 +1775,7 @@ main {
     flex-direction: row-reverse !important;
   }
 
+
   /**
    * Direction: column
    */
@@ -1666,6 +1795,7 @@ main {
     -ms-flex-direction: column-reverse !important;
     flex-direction: column-reverse !important;
   }
+
 
   /**
    * Wrap
@@ -1688,6 +1818,7 @@ main {
     -ms-flex-wrap: wrap-reverse !important;
     flex-wrap: wrap-reverse !important;
   }
+
 
   /**
    * Align items along the main axis of the current line of the flex container
@@ -1726,6 +1857,7 @@ main {
     -ms-flex-pack: distribute !important;
     justify-content: space-around !important;
   }
+
 
   /**
    * Align items in the cross axis of the current line of the flex container
@@ -1772,6 +1904,7 @@ main {
     align-items: baseline !important;
   }
 
+
   /**
    * Aligns items within the flex container when there is extra space in the cross-axis
    *
@@ -1814,9 +1947,11 @@ main {
     align-content: space-around !important;
   }
 
+
   /**
    * 1. Set the flex-shrink default explicitly to fix IE10 - http://git.io/vllC7
    */
+
 
   /* postcss-bem-linter: ignore */
 
@@ -1826,11 +1961,14 @@ main {
     -ms-flex-negative: 1;
     flex-shrink: 1;
 
+
     /* 1 */
   }
 
+
   /* Applies to flex items
      ========================================================================== */
+
 
   /**
    * Override default alignment of single item when specified by `align-items`
@@ -1872,6 +2010,7 @@ main {
     align-self: auto !important;
   }
 
+
   /**
    * Change order without editing underlying HTML
    */
@@ -1897,6 +2036,7 @@ main {
     order: 0 !important;
   }
 
+
   /**
    * Specify the flex grow factor, which determines how much the flex item will
    * grow relative to the rest of the flex items in the flex container.
@@ -1912,6 +2052,7 @@ main {
     -webkit-flex: 1 1 0% !important;
     -ms-flex: 1 1 0% !important;
     flex: 1 1 0% !important;
+
 
     /* 1 */
   }
@@ -1944,6 +2085,7 @@ main {
     flex: 5 1 0% !important;
   }
 
+
   /**
    * Aligning with `auto` margins - http://www.w3.org/TR/css-flexbox-1/#auto-margins
    */
@@ -1956,8 +2098,10 @@ main {
     margin-right: auto !important;
   }
 
+
   /* Proportional widths: breakpoint 1 (small)
      ========================================================================== */
+
 
   /**
    * Specify the proportional width of an object.
@@ -1968,12 +2112,14 @@ main {
    *    http://git.io/vllMD
    */
 
+
   /* postcss-bem-linter: ignore */
 
   [class*="u-sm-size"] {
     -webkit-flex-basis: auto !important;
     -ms-flex-preferred-size: auto !important;
     flex-basis: auto !important;
+
 
     /* 1 */
   }
@@ -2089,8 +2235,10 @@ main {
     width: 91.66667% !important;
   }
 
+
   /* Intrinsic widths
      ========================================================================== */
+
 
   /**
    * Make an element fill the remaining space.
@@ -2105,13 +2253,16 @@ main {
     -ms-flex: 1 1 0% !important;
     flex: 1 1 0% !important;
 
+
     /* 1 */
     -webkit-flex-basis: 0% !important;
     -ms-flex-preferred-size: 0% !important;
     flex-basis: 0% !important;
 
+
     /* 2 */
   }
+
 
   /**
    * An alternative method to make an element fill the remaining space.
@@ -2129,6 +2280,7 @@ main {
     -ms-flex-preferred-size: auto !important;
     flex-basis: auto !important;
   }
+
 
   /**
    * Make an element the width of its parent.
@@ -2239,8 +2391,10 @@ main {
     text-align: right;
   }
 
+
   /* Applies to flex container
      ========================================================================== */
+
 
   /**
    * Container
@@ -2259,6 +2413,7 @@ main {
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
+
 
   /**
    * Direction: row
@@ -2280,6 +2435,7 @@ main {
     flex-direction: row-reverse !important;
   }
 
+
   /**
    * Direction: column
    */
@@ -2299,6 +2455,7 @@ main {
     -ms-flex-direction: column-reverse !important;
     flex-direction: column-reverse !important;
   }
+
 
   /**
    * Wrap
@@ -2321,6 +2478,7 @@ main {
     -ms-flex-wrap: wrap-reverse !important;
     flex-wrap: wrap-reverse !important;
   }
+
 
   /**
    * Align items along the main axis of the current line of the flex container
@@ -2359,6 +2517,7 @@ main {
     -ms-flex-pack: distribute !important;
     justify-content: space-around !important;
   }
+
 
   /**
    * Align items in the cross axis of the current line of the flex container
@@ -2405,6 +2564,7 @@ main {
     align-items: baseline !important;
   }
 
+
   /**
    * Aligns items within the flex container when there is extra space in the cross-axis
    *
@@ -2447,9 +2607,11 @@ main {
     align-content: space-around !important;
   }
 
+
   /**
    * 1. Set the flex-shrink default explicitly to fix IE10 - http://git.io/vllC7
    */
+
 
   /* postcss-bem-linter: ignore */
 
@@ -2459,11 +2621,14 @@ main {
     -ms-flex-negative: 1;
     flex-shrink: 1;
 
+
     /* 1 */
   }
 
+
   /* Applies to flex items
      ========================================================================== */
+
 
   /**
    * Override default alignment of single item when specified by `align-items`
@@ -2505,6 +2670,7 @@ main {
     align-self: auto !important;
   }
 
+
   /**
    * Change order without editing underlying HTML
    */
@@ -2530,6 +2696,7 @@ main {
     order: 0 !important;
   }
 
+
   /**
    * Specify the flex grow factor, which determines how much the flex item will
    * grow relative to the rest of the flex items in the flex container.
@@ -2545,6 +2712,7 @@ main {
     -webkit-flex: 1 1 0% !important;
     -ms-flex: 1 1 0% !important;
     flex: 1 1 0% !important;
+
 
     /* 1 */
   }
@@ -2577,6 +2745,7 @@ main {
     flex: 5 1 0% !important;
   }
 
+
   /**
    * Aligning with `auto` margins - http://www.w3.org/TR/css-flexbox-1/#auto-margins
    */
@@ -2589,8 +2758,10 @@ main {
     margin-right: auto !important;
   }
 
+
   /* Proportional widths: breakpoint 2 (medium)
      ========================================================================== */
+
 
   /**
    * Specify the proportional width of an object.
@@ -2601,12 +2772,14 @@ main {
    *    http://git.io/vllMD
    */
 
+
   /* postcss-bem-linter: ignore */
 
   [class*="u-md-size"] {
     -webkit-flex-basis: auto !important;
     -ms-flex-preferred-size: auto !important;
     flex-basis: auto !important;
+
 
     /* 1 */
   }
@@ -2722,8 +2895,10 @@ main {
     width: 91.66667% !important;
   }
 
+
   /* Intrinsic widths
      ========================================================================== */
+
 
   /**
    * Make an element fill the remaining space.
@@ -2738,13 +2913,16 @@ main {
     -ms-flex: 1 1 0% !important;
     flex: 1 1 0% !important;
 
+
     /* 1 */
     -webkit-flex-basis: 0% !important;
     -ms-flex-preferred-size: 0% !important;
     flex-basis: 0% !important;
 
+
     /* 2 */
   }
+
 
   /**
    * An alternative method to make an element fill the remaining space.
@@ -2762,6 +2940,7 @@ main {
     -ms-flex-preferred-size: auto !important;
     flex-basis: auto !important;
   }
+
 
   /**
    * Make an element the width of its parent.
@@ -2830,8 +3009,10 @@ main {
     align-items: center;
   }
 
+
   /* Applies to flex container
      ========================================================================== */
+
 
   /**
    * Container
@@ -2850,6 +3031,7 @@ main {
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
+
 
   /**
    * Direction: row
@@ -2871,6 +3053,7 @@ main {
     flex-direction: row-reverse !important;
   }
 
+
   /**
    * Direction: column
    */
@@ -2890,6 +3073,7 @@ main {
     -ms-flex-direction: column-reverse !important;
     flex-direction: column-reverse !important;
   }
+
 
   /**
    * Wrap
@@ -2912,6 +3096,7 @@ main {
     -ms-flex-wrap: wrap-reverse !important;
     flex-wrap: wrap-reverse !important;
   }
+
 
   /**
    * Align items along the main axis of the current line of the flex container
@@ -2950,6 +3135,7 @@ main {
     -ms-flex-pack: distribute !important;
     justify-content: space-around !important;
   }
+
 
   /**
    * Align items in the cross axis of the current line of the flex container
@@ -2996,6 +3182,7 @@ main {
     align-items: baseline !important;
   }
 
+
   /**
    * Aligns items within the flex container when there is extra space in the cross-axis
    *
@@ -3038,9 +3225,11 @@ main {
     align-content: space-around !important;
   }
 
+
   /**
    * 1. Set the flex-shrink default explicitly to fix IE10 - http://git.io/vllC7
    */
+
 
   /* postcss-bem-linter: ignore */
 
@@ -3050,11 +3239,14 @@ main {
     -ms-flex-negative: 1;
     flex-shrink: 1;
 
+
     /* 1 */
   }
 
+
   /* Applies to flex items
      ========================================================================== */
+
 
   /**
    * Override default alignment of single item when specified by `align-items`
@@ -3096,6 +3288,7 @@ main {
     align-self: auto !important;
   }
 
+
   /**
    * Change order without editing underlying HTML
    */
@@ -3121,6 +3314,7 @@ main {
     order: 0 !important;
   }
 
+
   /**
    * Specify the flex grow factor, which determines how much the flex item will
    * grow relative to the rest of the flex items in the flex container.
@@ -3136,6 +3330,7 @@ main {
     -webkit-flex: 1 1 0% !important;
     -ms-flex: 1 1 0% !important;
     flex: 1 1 0% !important;
+
 
     /* 1 */
   }
@@ -3168,6 +3363,7 @@ main {
     flex: 5 1 0% !important;
   }
 
+
   /**
    * Aligning with `auto` margins - http://www.w3.org/TR/css-flexbox-1/#auto-margins
    */
@@ -3180,8 +3376,10 @@ main {
     margin-right: auto !important;
   }
 
+
   /* Proportional widths: breakpoint 3 (large)
      ========================================================================== */
+
 
   /**
    * Specify the proportional width of an object.
@@ -3192,12 +3390,14 @@ main {
    *    http://git.io/vllMD
    */
 
+
   /* postcss-bem-linter: ignore */
 
   [class*="u-lg-size"] {
     -webkit-flex-basis: auto !important;
     -ms-flex-preferred-size: auto !important;
     flex-basis: auto !important;
+
 
     /* 1 */
   }
@@ -3313,8 +3513,10 @@ main {
     width: 91.66667% !important;
   }
 
+
   /* Intrinsic widths
      ========================================================================== */
+
 
   /**
    * Make an element fill the remaining space.
@@ -3329,13 +3531,16 @@ main {
     -ms-flex: 1 1 0% !important;
     flex: 1 1 0% !important;
 
+
     /* 1 */
     -webkit-flex-basis: 0% !important;
     -ms-flex-preferred-size: 0% !important;
     flex-basis: 0% !important;
 
+
     /* 2 */
   }
+
 
   /**
    * An alternative method to make an element fill the remaining space.
@@ -3353,6 +3558,7 @@ main {
     -ms-flex-preferred-size: auto !important;
     flex-basis: auto !important;
   }
+
 
   /**
    * Make an element the width of its parent.
@@ -3389,8 +3595,7 @@ main {
   }
 
   html {
-    font-size: 112.5%;
+    font-size: 100%;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

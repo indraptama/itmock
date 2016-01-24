@@ -21,6 +21,8 @@
   transition: transform 250ms ease;
   width: 100%;
   z-index: -1;
+  font-size: 0.875rem;
+  opacity: 0;
 }
 
 @media (--lg-viewport) {

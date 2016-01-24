@@ -6,7 +6,8 @@
     <title></title>
     <meta name="description" content="content"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="apple-touch-icon" href="apple-touch-icon.png"/><link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100' rel='stylesheet' type='text/css'>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/><link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="asset/css/ionicons.css"/>
     <link rel="stylesheet" href="asset/css/normalize.css"/>
     <link rel="stylesheet" href="asset/css/base.css"/>
@@ -20,8 +21,18 @@
       </div>
     </header>
     <main>
-      <div class="Hero Hero--hight-oneTree">
-        <div class="Hero-image"></div>
+      <div class="Hero">
+        <div class="Hero-image">
+          <div class="IsometricSlider">
+            <div class="IsometricSlider-container">
+              <div class="IsometricSlider-item imgFill"><span class="IsometricSlider-shadow"></span><img src="asset/img/ss/ss1.png" alt="" class="imgFillSrc"/></div>
+              <div class="IsometricSlider-item imgFill"><span class="IsometricSlider-shadow"></span><img src="asset/img/ss/ss2.png" alt="" class="imgFillSrc"/></div>
+              <div class="IsometricSlider-item imgFill"><span class="IsometricSlider-shadow"></span><img src="asset/img/ss/ss3.png" alt="" class="imgFillSrc"/></div>
+              <div class="IsometricSlider-item imgFill"><span class="IsometricSlider-shadow"></span><img src="asset/img/ss/ss4.png" alt="" class="imgFillSrc"/></div>
+              <div class="IsometricSlider-item imgFill"><span class="IsometricSlider-shadow"></span><img src="asset/img/ss/ss5.png" alt="" class="imgFillSrc"/></div>
+            </div>
+          </div>
+        </div>
         <div class="Hero-content">
           <div class="Container u-textCenter">
             <h2 class="Section-title">app center</h2>
@@ -32,17 +43,9 @@
           </div>
         </div>
       </div>
-      <div class="IsometricSlider">
-        <div class="IsometricSlider-container">
-          <div class="IsometricSlider-item imgFill"><span class="IsometricSlider-shadow"></span><img src="asset/img/ss/ss1.png" alt="" class="imgFillSrc"/></div>
-          <div class="IsometricSlider-item imgFill"><span class="IsometricSlider-shadow"></span><img src="asset/img/ss/ss2.png" alt="" class="imgFillSrc"/></div>
-          <div class="IsometricSlider-item imgFill"><span class="IsometricSlider-shadow"></span><img src="asset/img/ss/ss3.png" alt="" class="imgFillSrc"/></div>
-          <div class="IsometricSlider-item imgFill"><span class="IsometricSlider-shadow"></span><img src="asset/img/ss/ss4.png" alt="" class="imgFillSrc"/></div>
-        </div>
-      </div>
-      <div class="Container">
-        <div class="Grid Grid--alignRight py3">
-          <div class="Grid-cell u-textLeft">
+      <div class="Container py4">
+        <div class="Grid Grid--withGutter Grid--alignRight py3">
+          <div class="Grid-cell u-md-size1of2 u-textLeft">
             <div class="svg-container">
               <svg version="1.1" viewBox="0 0 800 495" enable-background="new 0 0 800 495" preserveAspectRatio="xMinYMin meet">
                 <image overflow="visible" width="450" height="800" xlink:href="/asset/img/mockup/alacard.png" transform="matrix(0.5156 0.3304 -0.5626 0.3229 498.8594 25.6948)"></image>
@@ -51,17 +54,16 @@
             </div>
           </div>
           <div class="Grid-cell u-md-size1of2">
-            <div class="Container Container--full">
-              <!-- img.icon-medium(src="/asset/img/logo/alacard.png", alt="")-->
+            <div class="Container Container--full"><img src="/asset/img/logo/alacard.png" alt="" class="icon-medium mb2"/>
               <h3>AlaCard</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quaerat eaque vero aspernatur eum id recusandae, nulla at veritatis in, similique numquam impedit neque commodi repudiandae odit quam voluptatum mollitia!</p>
-              <div class="u-flexx"><a href=""> <img src="asset/img/logo/playstore.png" alt=""/></a><a href=""><img src="asset/img/logo/applestore.svg" alt=""/></a></div>
+              <div class="u-flexx"><a href="" class="mr2"> <img src="asset/img/logo/playstore.png" alt=""/></a><a href="" class="mr2"><img src="asset/img/logo/applestore.svg" alt=""/></a></div>
             </div>
           </div>
         </div>
         <hr/>
-        <div class="Grid Grid--alignRight py3">
-          <div class="Grid-cell u-textLeft">
+        <div class="Grid Grid--withGutter Grid--alignRight py3">
+          <div class="Grid-cell u-md-size1of2 u-textLeft">
             <div class="svg-container">
               <svg version="1.1" viewBox="0 0 800 495" enable-background="new 0 0 800 495" preserveAspectRatio="xMinYMin meet">
                 <image overflow="visible" width="450" height="800" xlink:href="/asset/img/mockup/alfa.png" transform="matrix(0.5156 0.3304 -0.5626 0.3229 498.8594 25.6948)"></image>
@@ -70,16 +72,16 @@
             </div>
           </div>
           <div class="Grid-cell u-md-size1of2">
-            <div class="Container Container--full"><img src="/asset/img/logo/alfamart.jpg" alt="" class="icon-medium"/>
+            <div class="Container Container--full"><img src="/asset/img/logo/alfamart.jpg" alt="" class="icon-medium mb2"/>
               <h3>Alfa Gift</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quaerat eaque vero aspernatur eum id recusandae, nulla at veritatis in, similique numquam impedit neque commodi repudiandae odit quam voluptatum mollitia!</p>
-              <div class="u-flexx"><a href=""> <img src="asset/img/logo/playstore.png" alt=""/></a><a href=""><img src="asset/img/logo/applestore.svg" alt=""/></a></div>
+              <div class="u-flexx"><a href="" class="mr2"> <img src="asset/img/logo/playstore.png" alt=""/></a><a href="" class="mr2"><img src="asset/img/logo/applestore.svg" alt=""/></a></div>
             </div>
           </div>
         </div>
         <hr/>
-        <div class="Grid Grid--alignRight py3">
-          <div class="Grid-cell u-textLeft">
+        <div class="Grid Grid--withGutter Grid--alignRight py3">
+          <div class="Grid-cell u-md-size1of2 u-textLeft">
             <div class="svg-container">
               <svg version="1.1" viewBox="0 0 800 495" enable-background="new 0 0 800 495" preserveAspectRatio="xMinYMin meet">
                 <image overflow="visible" width="450" height="800" xlink:href="/asset/img/mockup/indosat.png" transform="matrix(0.5156 0.3304 -0.5626 0.3229 498.8594 25.6948)"></image>
@@ -88,15 +90,15 @@
             </div>
           </div>
           <div class="Grid-cell u-md-size1of2">
-            <div class="Container Container--full"><img src="/asset/img/logo/indosat2.jpg" alt="" class="icon-medium"/>
+            <div class="Container Container--full"><img src="/asset/img/logo/indosat2.jpg" alt="" class="icon-medium mb2"/>
               <h3>Indosat Ooredoo</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quaerat eaque vero aspernatur eum id recusandae, nulla at veritatis in, similique numquam impedit neque commodi repudiandae odit quam voluptatum mollitia!</p>
-              <div class="u-flexx"><a href=""> <img src="asset/img/logo/playstore.png" alt=""/></a><a href=""><img src="asset/img/logo/applestore.svg" alt=""/></a></div>
+              <div class="u-flexx"><a href="" class="mr2"> <img src="asset/img/logo/playstore.png" alt=""/></a><a href="" class="mr2"><img src="asset/img/logo/applestore.svg" alt=""/></a></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="Container py3 u-textCenter"><a href="#" class="Button Button--primary Button--long px4">Load More</a></div>
+      <div class="Container py3 u-textCenter"><a href="#" class="Button Button--primary Button--large px4">Load More</a></div>
     </main>
     <footer class="MainFooter">
       <div class="Container py4 u-flex u-sm-flexCol u-flexJustifyBetween u-flex u-lg-flexAlignsCenter">
@@ -113,10 +115,21 @@
         <div class="u-flex socialmed-m"><a href=""><span class="ion ion-social-twitter"></span></a><a href=""><span class="ion ion-social-facebook"></span></a><a href=""><span class="ion ion-social-googleplus"></span></a><a href=""><span class="ion ion-social-instagram"></span></a></div>
       </div>
     </nav>
+    <script src="asset/js/particleslider.js"></script>
     <script src="js/app.js"></script>
     <script src="asset/js/particles.js"></script>
-    <!-- script(src="asset/js/particle.js")-->
-    
+    <script src="http://creatiointl.org/gallery/william/tiny-slider/src/js/tiny-slider.js"></script>
+    <script>
+      tinySlider({
+       container: document.querySelector('.slider'),
+       items: 1,
+       
+       autoplay: false,
+       speed: 300,
+       autoplayTimeout: 3000,
+       loop: true
+      });
+    </script>
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

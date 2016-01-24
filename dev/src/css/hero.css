@@ -42,3 +42,7 @@
 .Hero--hight-oneTree {
   min-height: 66.66vh;
 }
+
+#particle-slider {
+  height: 500px;
+}

@@ -3,6 +3,7 @@
 }
 
 @import "./css/typo.css";
+@import "./css/img.css";
 
 /* components */
 @import "./css/container.css";
@@ -27,15 +28,38 @@
 
 @import "gravitons";
 
+
+/* JS */
+@import "./css/tiny-slider.css";
+
 /* Variable */
+
+/*
+$global-width: rem-calc(1140);
+$global-font-size: 100%;
+$global-lineheight: 1.5;
+$primary-color: #2199e8;
+$secondary-color: #777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #CFD8DC;
+$medium-gray: #78909C;
+$dark-gray: #455A64;
+$black: #263238;
+$white: #fefefe;
+*/
 :root {
   --color-body-text: rgba(#263238, 0.87);
   --color-dark-primary: #01579b;
   --color-header-text: #1a237e;
   --color-primary: #0091ea;
-  --font-body: "europa";
+  --color-light-grey: #CFD8DC;
+  --color-white-one: #fcfcfc;
+  --color-white-two: #f0ecf1; /* ECEFF1; */
+  --font-body: "open sans";
   --font-code: console;
-  --font-header: "europa";
+  --font-header: "open sans";
   --font-quote: serif;
 }
 
@@ -61,13 +85,8 @@ html {
 
 @media (--xl-viewport) {
   html {
-    font-size: 112.5%;
+    font-size: 100%;
   }
-}
-
-img {
-  max-width: 100%;
-  vertical-align: middle;
 }
 
 .hack-Grid-flipL .Grid:nth-child(2n+1) {
@@ -102,6 +121,10 @@ hr {
   background-color: #f3f3f3;
 }
 
+.bg-light-grey {
+  background-color: var(--color-white-two);
+}
+
 main {
   margin-top: 48px;
 }
@@ -117,15 +140,6 @@ main {
   }
 }
 
-.dropcap p:first-child:first-letter {
-  color: var(--color-header-text);
-  float: left;
-  font-size: 75px;
-  line-height: 60px;
-  padding-left: 3px;
-  padding-right: 8px;
-  padding-top: 4px;
-}
 
 .u-textWhite {
   color: rgba(#fff, 0.9);
@@ -145,4 +159,34 @@ main {
 
 .socialmed-m:first-child a {
   margin-left: 0;
+}
+
+.home-mockup {
+  min-width: 256px;
+  height: auto;
+  max-width: none;
+}
+
+.indosvg svg .pulse {
+  opacity: 0.5;
+}
+
+.AppSlider {
+  position: relative;
+}
+
+.AppSlider-device {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 256px;
+}
+
+.AppSlider-content {
+  padding-top: 64px;
+}
+
+#link-img {
+  height: 320px;
 }

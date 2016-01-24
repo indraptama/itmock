@@ -1,11 +1,11 @@
 .MainHeader {
 	position: relative;
-  background-color: #fff;
-  box-shadow: 0 2px 5px 0px rgba(#000,0);
+  background-color: #fcfcfc;
+  box-shadow: 0 1px 0 0 hsla(0,0%,57%,.2);
 }
 
 .MainHeader.MainHeader-onScroll {
-  box-shadow: 0 2px 5px 0px rgba(#000,0.2);
+  box-shadow: 0 1px 0 0 hsla(0,0%,57%,.2);
   position: fixed;
   top: 0;
   left: 0;
@@ -93,7 +93,7 @@
   bottom: 0;
   left: 0;
   z-index: 9999;
-  background-color: #fff;
+  background-color: #fcfcfc;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -154,7 +154,7 @@
   margin:0;
   font-size: 24px;
   background-color: var(--color-primary);
-  color: #fff;
+  color: #fcfcfc;
   border-radius: 2px;
   text-decoration: none;
   text-align: center;

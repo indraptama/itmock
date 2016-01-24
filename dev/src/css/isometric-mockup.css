@@ -1,24 +1,25 @@
 .IsometricSlider {
-	
+	width: 100%;
+	position: relative;
 }
 
 .IsometricSlider-container {
 	display: flex;
 	transform: rotateX(54.736deg) rotateZ(-45deg);
 	transform-style: preserve-3d;
+	bottom: 0;
+	justify-content: center;
 }
 
 .IsometricSlider-content {
-
+	
 }
 
 .IsometricSlider-item {
-	height: 400px; width: 225px;
+	height: 400px;
+	width: 225px;
 	margin: 0 0.75rem;
-
-	/*Hide the lighting gradient from the front face*/
-
-	/*Preserve 3D style for children(pseudo elements)*/
+	flex-shrink: 0;
 	transform-style: preserve-3d;
 }
 
@@ -26,8 +27,10 @@
 .IsometricSlider-item:after {
 	content: '';
 	position: absolute;
-	/*100% height and width*/
-	top: 0; left: 0; right: 0; bottom: 0;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0;
 	background: inherit;
 	background-size: cover;
 }
@@ -35,15 +38,12 @@
 .IsometricSlider-item:before {
 	transform-origin: left center;
 	transform: rotateY(90deg);
-	/*Reducing the width of the left side for a flat feel*/
 	width: 5px;
 }
 .IsometricSlider-item:after {
 	transform-origin: bottom center;
 	transform: rotateX(90deg);
-	/*Reducing the height*/
 	height: 5px; top: auto; bottom: 0;
-	/*Background fix - start the background from the bottom*/
 	background-position: bottom center;
 }
 
